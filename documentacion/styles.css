@@ -1,0 +1,275 @@
+﻿*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --azul:#1a56db;
+  --azul-light:#e8f0fe;
+  --azul-dark:#1240a8;
+  --texto:#1a1a2e;
+  --texto2:#4a5568;
+  --texto3:#718096;
+  --bg:#f7f8fc;
+  --blanco:#ffffff;
+  --borde:#e2e8f0;
+  --borde2:#cbd5e0;
+  --radio:10px;
+  --radio-lg:14px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;font-size:15px;line-height:1.75;color:var(--texto);background:var(--bg);min-height:100vh}
+
+/* ── HEADER ── */
+header{
+  background:var(--blanco);
+  border-bottom:1px solid var(--borde);
+  padding:0 2rem;
+  position:sticky;top:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  height:64px;
+}
+.header-brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.header-logo{
+  width:56px;height:56px;border-radius:10px;
+  background:transparent;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  overflow:hidden;
+}
+.header-logo img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+.header-title{font-size:16px;font-weight:700;color:var(--texto);line-height:1.2}
+.header-sub{font-size:11.5px;color:var(--texto3)}
+.header-meta{font-size:12px;color:var(--texto3)}
+
+/* ── NAV NÚMEROS ── */
+nav.ra-nav{
+  background:var(--blanco);
+  border-bottom:1px solid var(--borde);
+  display:flex;align-items:center;gap:4px;
+  padding:0 2rem;
+  overflow-x:auto;
+  height:52px;
+}
+nav.ra-nav a{
+  display:flex;align-items:center;gap:8px;
+  padding:.4rem 1rem;border-radius:20px;
+  text-decoration:none;font-size:13px;font-weight:500;
+  color:var(--texto2);white-space:nowrap;
+  transition:background .15s,color .15s;
+}
+nav.ra-nav a:hover{background:var(--azul-light);color:var(--azul)}
+nav.ra-nav a.activo{background:var(--azul);color:#fff}
+nav.ra-nav .num{
+  width:24px;height:24px;border-radius:50%;
+  background:var(--bg);border:1px solid var(--borde2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:700;color:var(--texto3);
+  flex-shrink:0;transition:background .15s,border .15s,color .15s
+}
+nav.ra-nav a:hover .num{background:var(--azul-light);border-color:var(--azul);color:var(--azul)}
+nav.ra-nav a.activo .num{background:rgba(255,255,255,.25);border-color:transparent;color:#fff}
+
+/* ── MAIN CONTENT ── */
+main{max-width:860px;margin:0 auto;padding:3rem 2rem 6rem}
+
+/* ── SECCIONES RA ── */
+.ra-section{display:none;animation:fadein .2s ease}
+.ra-section.activo{display:block}
+@keyframes fadein{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* ── SECTION LABEL CHIP ── */
+.ra-chip{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:11.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;
+  color:var(--azul);background:var(--azul-light);
+  padding:4px 12px;border-radius:20px;margin-bottom:1rem
+}
+
+/* ── H1 GRANDE ── */
+.ra-h1{font-size:2rem;font-weight:800;color:var(--texto);margin-bottom:.4rem;line-height:1.2}
+.ra-h1-sub{font-size:14.5px;color:var(--texto3);margin-bottom:2rem}
+
+/* ── SEPARADOR DE SUB-SECCIÓN ── */
+.sub-header{
+  display:flex;align-items:baseline;gap:10px;
+  margin:2.5rem 0 1rem;
+  padding-bottom:.75rem;
+  border-bottom:2px solid var(--borde)
+}
+.sub-header .ra-tag{
+  font-size:11px;font-weight:700;color:var(--texto3);
+  letter-spacing:.5px;text-transform:uppercase;white-space:nowrap
+}
+.sub-header h2{font-size:1.2rem;font-weight:700;color:var(--texto)}
+.sub-header .sub-desc{font-size:13px;color:var(--texto3);margin-top:.2rem}
+
+/* ── MINI-CARDS DE CARACTERÍSTICAS (grid 3 col) ── */
+.feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:1.25rem 0}
+.feat-card{
+  background:var(--blanco);border:1px solid var(--borde);
+  border-radius:var(--radio-lg);padding:1.1rem 1.2rem;
+}
+.feat-card-title{font-size:13.5px;font-weight:700;color:var(--texto);margin-bottom:.4rem}
+.feat-card-body{font-size:13px;color:var(--texto2);line-height:1.6}
+
+/* ── DRIVE CARDS (para vincular archivos) ── */
+.drive-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:1.25rem 0}
+.drive-card{
+  background:var(--blanco);border:1px solid var(--borde);
+  border-radius:var(--radio-lg);padding:1.1rem 1.25rem;
+  display:flex;flex-direction:column;gap:.6rem;
+  transition:border-color .15s,box-shadow .15s
+}
+.drive-card:hover{border-color:#a0b4f0;box-shadow:0 2px 12px rgba(26,86,219,.08)}
+.drive-icon{font-size:22px;line-height:1}
+.drive-title{font-size:14px;font-weight:700;color:var(--texto)}
+.drive-desc{font-size:12.5px;color:var(--texto3);flex:1}
+.drive-btn{
+  display:inline-flex;align-items:center;gap:5px;
+  font-size:12.5px;font-weight:600;color:var(--azul);
+  background:var(--azul-light);padding:5px 12px;
+  border-radius:20px;text-decoration:none;align-self:flex-start;
+  transition:background .15s
+}
+.drive-btn:hover{background:#d0e2ff}
+.drive-btn svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2.5}
+
+/* ── TABLA ESTÁNDAR ── */
+.tbl-wrap{overflow-x:auto;margin:1rem 0}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{background:#f1f5fd;border:1px solid var(--borde);padding:.6rem .9rem;
+   font-weight:700;color:var(--texto);font-size:12.5px;text-align:left}
+td{border:1px solid var(--borde);padding:.55rem .9rem;color:var(--texto2);vertical-align:top}
+tr:nth-child(even) td{background:#fafbfe}
+
+/* ── BADGES ── */
+.badge{display:inline-block;font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px}
+.b-blue{background:#dbeafe;color:#1d4ed8}
+.b-green{background:#dcfce7;color:#15803d}
+.b-yellow{background:#fef9c3;color:#854d0e}
+.b-gray{background:#f1f5f9;color:#475569}
+.b-red{background:#fee2e2;color:#b91c1c}
+
+/* ── INFO BOX ── */
+.info-box{
+  background:var(--azul-light);border-left:4px solid var(--azul);
+  padding:.875rem 1.1rem;border-radius:0 var(--radio) var(--radio) 0;
+  font-size:13.5px;color:#1e3a8a;margin:1rem 0
+}
+.warn-box{
+  background:#fffbeb;border-left:4px solid #d97706;
+  padding:.875rem 1.1rem;border-radius:0 var(--radio) var(--radio) 0;
+  font-size:13.5px;color:#78350f;margin:1rem 0
+}
+.ok-box{
+  background:#f0fdf4;border-left:4px solid #16a34a;
+  padding:.875rem 1.1rem;border-radius:0 var(--radio) var(--radio) 0;
+  font-size:13.5px;color:#14532d;margin:1rem 0
+}
+
+/* ── QUOTE PREGUNTA ── */
+.quote{
+  background:#f8f9ff;border-left:4px solid var(--azul);
+  padding:1rem 1.25rem;border-radius:0 var(--radio-lg) var(--radio-lg) 0;
+  font-size:14px;font-style:italic;color:var(--texto2);margin:1rem 0
+}
+
+/* ── MÓDULOS RF ── */
+.mod-tabs{display:flex;flex-wrap:wrap;gap:6px;margin:1rem 0}
+.mod-tab{
+  padding:.35rem .875rem;border-radius:20px;font-size:12.5px;font-weight:600;
+  cursor:pointer;border:1px solid var(--borde);color:var(--texto2);
+  background:var(--blanco);transition:all .15s
+}
+.mod-tab:hover,.mod-tab.on{background:var(--azul);color:#fff;border-color:var(--azul)}
+.rf-panel{display:none}
+.rf-panel.on{display:block}
+.rf-row{
+  background:var(--blanco);border:1px solid var(--borde);
+  border-radius:var(--radio);padding:.9rem 1rem;margin-bottom:.6rem
+}
+.rf-name{font-weight:700;font-size:13.5px;color:var(--texto);margin-bottom:.5rem}
+.rf-tags{display:flex;flex-wrap:wrap;gap:4px}
+.rf-tag{font-size:11.5px;background:#f1f5f9;border:1px solid var(--borde2);
+        border-radius:6px;padding:2px 8px;color:var(--texto2)}
+
+/* ── RNF CARDS ── */
+.rnf-card{
+  background:var(--blanco);border:1px solid var(--borde);
+  border-radius:var(--radio-lg);padding:1.1rem 1.25rem;margin-bottom:.875rem
+}
+.rnf-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.625rem}
+.rnf-id{font-size:11.5px;font-weight:700;color:var(--azul);
+        background:var(--azul-light);padding:2px 10px;border-radius:20px}
+.rnf-name{font-size:15px;font-weight:700;color:var(--texto)}
+.rnf-desc{font-size:13.5px;color:var(--texto2);margin-bottom:.75rem}
+.rnf-grid{display:grid;grid-template-columns:1fr 1fr;gap:.625rem;font-size:13px}
+@media(max-width:580px){.rnf-grid{grid-template-columns:1fr}}
+.rnf-cell{background:#f8f9fc;border:1px solid var(--borde);border-radius:8px;padding:.5rem .75rem}
+.rnf-clabel{font-size:11px;font-weight:700;color:var(--texto3);text-transform:uppercase;letter-spacing:.4px;margin-bottom:2px}
+.rnf-cval{color:var(--texto2)}
+
+/* ── CASOS DE USO ── */
+.uc-card{border:1px solid var(--borde);border-radius:var(--radio-lg);overflow:hidden;margin-bottom:1rem}
+.uc-head{
+  background:linear-gradient(to right,#1a56db,#3b82f6);
+  color:#fff;padding:.75rem 1.25rem;
+  display:flex;justify-content:space-between;align-items:center
+}
+.uc-hname{font-weight:700;font-size:14px}
+.uc-hnum{font-size:11px;opacity:.8}
+.uc-body{padding:1rem 1.25rem;background:var(--blanco)}
+.uc-r{display:flex;gap:12px;margin-bottom:.55rem;font-size:13.5px}
+.uc-l{min-width:110px;font-weight:700;color:var(--texto);flex-shrink:0}
+.uc-v{color:var(--texto2)}
+
+/* ── HERO PORTADA ── */
+.hero{
+  background:linear-gradient(135deg,#1a56db,#2563eb 60%,#3b82f6);
+  border-radius:var(--radio-lg);padding:2.5rem 2rem;color:#fff;
+  margin-bottom:2rem;position:relative;overflow:hidden
+}
+.hero::after{content:'';position:absolute;right:-30px;top:-30px;
+  width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.07)}
+.hero-tag{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;opacity:.8;margin-bottom:.5rem}
+.hero h1{font-size:2.1rem;font-weight:800;margin-bottom:.35rem;position:relative;z-index:1}
+.hero-italic{font-style:italic;opacity:.85;font-size:14px;margin-bottom:1rem;position:relative;z-index:1}
+.hero-pills{display:flex;flex-wrap:wrap;gap:8px;position:relative;z-index:1}
+.hero-pill{font-size:12px;background:rgba(255,255,255,.18);
+           border-radius:20px;padding:4px 12px;font-weight:500}
+
+/* ── MÉTRICAS ── */
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin:1.5rem 0}
+.metric{background:var(--blanco);border:1px solid var(--borde);border-radius:var(--radio);
+        padding:.875rem;text-align:center}
+.metric-n{font-size:1.8rem;font-weight:800;color:var(--azul);display:block;line-height:1}
+.metric-l{font-size:11.5px;color:var(--texto3);margin-top:.25rem}
+
+/* ── PENDING ── */
+.pending{
+  background:#fffbeb;border:1px dashed #d97706;
+  border-radius:var(--radio-lg);padding:2rem;text-align:center;color:#78350f
+}
+.pending-icon{font-size:2.5rem;margin-bottom:.75rem}
+.pending h3{font-weight:700;margin-bottom:.5rem}
+.pending p{font-size:13.5px;opacity:.8}
+
+/* ── FOOTER ── */
+footer{
+  border-top:1px solid var(--borde);background:var(--blanco);
+  padding:1.5rem 2rem;text-align:center;
+  font-size:12.5px;color:var(--texto3)
+}
+
+/* ── Utility classes ── */
+.spaced-section{margin-top:2.5rem}
+.spaced-grid{margin-top:1.5rem}
+.spaced-grid-sm{margin-top:1.25rem}
+.spaced-box{margin-top:1rem}
+.project-list{padding-left:1.3rem;color:var(--texto2)}
+.project-list li{margin-bottom:.5rem}
+
+/* ── scrollbar ── */
+nav.ra-nav::-webkit-scrollbar{height:3px}
+nav.ra-nav::-webkit-scrollbar-thumb{background:var(--borde2);border-radius:4px}

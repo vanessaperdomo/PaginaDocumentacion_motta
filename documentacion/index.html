@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>RentaMovil — Documentación del Proyecto</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a class="header-brand" href="#" onclick="irA('portada')">
+    <div class="header-logo">
+      <img src="logo fijo proyecto.png" alt="Logotipo RentaMovil">
+    </div>
+    <div>
+      <div class="header-title">RentaMovil</div>
+      <div class="header-sub">Documentación del Proyecto · Ficha 3145555</div>
+    </div>
+  </a>
+  <span class="header-meta">Versión 1.0 · 2026</span>
+</header>
+
+<!-- NAV RA -->
+<nav class="ra-nav">
+  <a href="#" onclick="irA('portada')" id="nav-portada" class="activo">
+    <span class="num">0</span> Portada
+  </a>
+  <a href="#" onclick="irA('ra1')" id="nav-ra1">
+    <span class="num">1</span> RA1 — Diseño del Sistema
+  </a>
+  <a href="#" onclick="irA('ra2')" id="nav-ra2">
+    <span class="num">2</span> RA2 — Herramientas
+  </a>
+  <a href="#" onclick="irA('ra3')" id="nav-ra3">
+    <span class="num">3</span> RA3 — Front-end
+  </a>
+  <a href="#" onclick="irA('ra4')" id="nav-ra4">
+    <span class="num">4</span> RA4 — Codificación
+  </a>
+  <a href="#" onclick="irA('ra5')" id="nav-ra5">
+    <span class="num">5</span> RA5 — Pruebas
+  </a>
+</nav>
+
+<main>
+
+<!-- ══════════════════════════════════════════
+     PORTADA
+══════════════════════════════════════════ -->
+<div class="ra-section activo" id="sec-portada">
+
+  <div class="hero">
+    <div class="hero-tag"> Especificación de Requisitos de Software</div>
+    <h1>RentaMovil Location</h1>
+    <div class="hero-italic">"Alquila fácil, conduce libre"</div>
+    <div class="hero-pills">
+      <span class="hero-pill"> Laura Vanessa Pérez Perdomo</span>
+      <span class="hero-pill"> Danna Valentina Barrios Penagos</span>
+      <span class="hero-pill"> Ficha 3145555 · SENA CIES · 2026</span>
+    </div>
+  </div>
+
+  <div class="metrics">
+    <div class="metric"><span class="metric-n">71</span><span class="metric-l">Reqs. Funcionales</span></div>
+    <div class="metric"><span class="metric-n">11</span><span class="metric-l">Reqs. No Funcionales</span></div>
+    <div class="metric"><span class="metric-n">10</span><span class="metric-l">Módulos del Sistema</span></div>
+    <div class="metric"><span class="metric-n">22</span><span class="metric-l">Casos de Uso</span></div>
+    <div class="metric"><span class="metric-n">4</span><span class="metric-l">Roles de Usuario</span></div>
+  </div>
+
+  <div class="sub-header">
+    <span class="ra-tag">Portada</span>
+    <div><h2>Documentos del Proyecto</h2><div class="sub-desc">Accede a todos los entregables vinculados desde Google Drive</div></div>
+  </div>
+
+  <div class="drive-grid">
+    <div class="drive-card">
+      <div class="drive-icon"> </div>
+      <div class="drive-title">SRS — Especificación de Requisitos</div>
+      <div class="drive-desc">Documento completo con todos los requisitos funcionales, no funcionales y casos de uso del sistema RentaMovil.</div>
+      <a class="drive-btn" href="https://docs.google.com/document/d/152ee6QE1MSa_xGwVbO6_QzgRaj2hol7W/edit?usp=sharing&ouid=116115156506275506860&rtpof=true&sd=true" target="_blank">
+        Ver en Google Drive
+        <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+    <div class="drive-card">
+      <div class="drive-icon"> </div>
+      <div class="drive-title">Selección de Framework</div>
+      <div class="drive-desc">Análisis comparativo y justificación de las tecnologías seleccionadas para el desarrollo de RentaMovil.</div>
+      <a class="drive-btn" href="https://drive.google.com/file/d/1w7YWJQRbLp22xuidCx-81xPODgUoikhc/view?usp=sharing" target="_blank">
+        Ver en Google Drive
+        <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+    <div class="drive-card">
+      <div class="drive-icon"> </div>
+      <div class="drive-title">Mockup Web — Figma</div>
+      <div class="drive-desc">Diseño de la interfaz de usuario de la plataforma web de RentaMovil con todos los flujos de navegación.</div>
+      <a class="drive-btn" href="https://www.figma.com/design/YAosTPAwhs1kzLwR0hVDFF/Untitled?node-id=2-15" target="_blank">
+        Ver en Figma
+        <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+    <div class="drive-card">
+      <div class="drive-icon"> </div>
+      <div class="drive-title">Mockup Móvil — Figma</div>
+      <div class="drive-desc">Diseño de la aplicación móvil PWA para Android 13 y 14 con los flujos de usuario completos.</div>
+      <a class="drive-btn" href="https://www.figma.com/design/RixvW7ZNbcGrp7d1xUJCbL/Renta-Movil-mockup?node-id=0-1" target="_blank">
+        Ver en Figma
+        <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+    <div class="drive-card">
+      <div class="drive-icon"> </div>
+      <div class="drive-title">Diagramas UML</div>
+      <div class="drive-desc">Casos de uso, clases, secuencia y entidad-relación del sistema RentaMovil.</div>
+      <a class="drive-btn" href="https://drive.google.com/drive/folders/1S0ViYd8uj82i57bc1T-L7OOHiUJfCRqx?usp=sharing" target="_blank">
+        Ver en Google Drive
+        <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+    <div class="drive-card">
+      <div class="drive-icon"> </div>
+      <div class="drive-title">Script Base de Datos</div>
+      <div class="drive-desc">DDL completo del modelo relacional de datos del sistema con todas las tablas y relaciones.</div>
+      <a class="drive-btn" href="https://drive.google.com/drive/folders/1j3odrVaaTZ1Qv8jRemAdWacYB1Hj-z7N?usp=sharing" target="_blank">
+        Ver en Google Drive
+        <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="sub-header spaced-section">
+    <span class="ra-tag">Portada</span>
+    <div><h2>Resumen del Sistema</h2><div class="sub-desc">RentaMovil en un vistazo</div></div>
+  </div>
+
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Módulo</th><th>Descripción</th><th>Prioridad</th></tr>
+      <tr><td>1 — Gestión de Usuarios</td><td>Registro, inicio de sesión, invitado, roles JWT</td><td><span class="badge b-blue">Alta</span></td></tr>
+      <tr><td>2 — Gestión de Vehículos</td><td>Registro de vehículos, categorías, sucursales, flotas, reservas, pagos</td><td><span class="badge b-blue">Alta</span></td></tr>
+      <tr><td>3 — Auditoría y Comunicación</td><td>Auditoría del sistema, notificaciones por correo</td><td><span class="badge b-blue">Alta</span></td></tr>
+      <tr><td>4 — Perfil de Usuario</td><td>Editar perfil, cambiar contraseña, eliminar cuenta</td><td><span class="badge b-gray">Media</span></td></tr>
+      <tr><td>5 — Atención y Reportes</td><td>Quejas, atención al cliente (FATS), reportes, mantenimiento</td><td><span class="badge b-gray">Media</span></td></tr>
+      <tr><td>6 — Administración del Sistema</td><td>Panel admin, gestión administrativa, idiomas, mantenimiento vehicular</td><td><span class="badge b-blue">Alta</span></td></tr>
+      <tr><td>7 — Validaciones y Calificaciones</td><td>Licencia de conducir, calificaciones, API REST base</td><td><span class="badge b-blue">Alta</span></td></tr>
+      <tr><td>8 — API REST Operaciones</td><td>Vehículos, reservas, pagos, reportes, personalización</td><td><span class="badge b-blue">Alta</span></td></tr>
+      <tr><td>9 — Aplicación Móvil</td><td>PWA Android 13/14: módulos 1–7 adaptados a móvil</td><td><span class="badge b-blue">Alta</span></td></tr>
+      <tr><td>10 — Seguridad y Personalización</td><td>Perfil móvil, sincronización, 2FA, JWT, temas oscuro/claro</td><td><span class="badge b-blue">Alta</span></td></tr>
+    </table>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     RA1
+══════════════════════════════════════════ -->
+<div class="ra-section" id="sec-ra1">
+
+  <div class="ra-chip">RA1 — Resultado de Aprendizaje</div>
+  <div class="ra-h1">Informe de Diseño de Software</div>
+  <div style="margin: 0.8rem 0 1.2rem; text-align: center;">
+  <a href="https://drive.google.com/file/d/1npaaFhAiSrJQWicT9mpA1E8F4jOO52Z1/view?usp=sharing"
+     target="_blank"
+     style="display:inline-flex;align-items:center;gap:0.5rem;background:#2E75B6;color:#fff;padding:0.55rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:600;">
+    📄 Ver documento completo en Drive
+  </a>
+</div>
+
+
+
+  <!-- PORTADA -->
+  <div class="sub-header">
+    <span class="ra-tag">RA1</span>
+    <div><h2>Datos del documento</h2><div class="sub-desc">Integrantes, instructor e institución.</div></div>
+  </div>
+  <div class="feat-grid spaced-grid">
+    <div class="feat-card">
+      <div class="feat-card-title">Integrantes</div>
+      <div class="feat-card-body">Laura Vanessa Perez Perdomo · Danna Valentina Barrios Penagos · Emily Sharith Amezquita Saavedra</div>
+    </div>
+    <div class="feat-card">
+      <div class="feat-card-title">Instructor</div>
+      <div class="feat-card-body">José de Jesús Motta Vargas</div>
+    </div>
+    <div class="feat-card">
+      <div class="feat-card-title">Programa</div>
+      <div class="feat-card-body">Tecnólogo en Análisis y Desarrollo de Software · Ficha: 3145555</div>
+    </div>
+    <div class="feat-card">
+      <div class="feat-card-title">Institución</div>
+      <div class="feat-card-body">SENA — Sede Industrial, Centro de la Industria, la Empresa y los Servicios · Neiva-Huila · 2026</div>
+    </div>
+  </div>
+
+  <!-- RESULTADOS DE APRENDIZAJE -->
+  <div class="sub-header">
+    <span class="ra-tag">RA1</span>
+    <div><h2>Resultados de Aprendizaje</h2><div class="sub-desc">Competencias que cubre este informe.</div></div>
+  </div>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Código</th><th>Resultado</th></tr>
+      <tr><td><span class="badge b-blue">RA1</span></td><td>Planear actividades de construcción del software de acuerdo con el diseño establecido.</td></tr>
+      <tr><td><span class="badge b-blue">RA2</span></td><td>Construir la base de datos para el software a partir del modelo de datos.</td></tr>
+      <tr><td><span class="badge b-blue">RA3</span></td><td>Crear componentes front-end del software de acuerdo con el diseño.</td></tr>
+      <tr><td><span class="badge b-blue">RA4</span></td><td>Codificar la solución que cumpla con el diseño establecido.</td></tr>
+      <tr><td><span class="badge b-blue">RA5</span></td><td>Realizar pruebas al software para verificar su funcionalidad.</td></tr>
+    </table>
+  </div>
+
+  <!-- 1. INTRODUCCIÓN -->
+  <div class="sub-header">
+    <span class="ra-tag">RA1</span>
+    <div><h2>1. Introducción</h2><div class="sub-desc">Propósito, alcance, términos y documentos relacionados del IDS.</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">1.1 Propósito del documento</h3>
+  <p>El presente Informe de Diseño de Software (IDS) describe las decisiones técnicas y arquitectónicas que guiarán la construcción del sistema Renta Movil Location. Está elaborado con base en el SRS del proyecto, el documento de Selección de Framework y el documento de Selección y Configuración de Herramientas de Desarrollo. Su objetivo es servir de guía técnica completa para el equipo de desarrollo durante la fase de construcción.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">1.2 Alcance del sistema</h3>
+  <p>Renta Movil Location es una plataforma integral de alquiler de vehículos compuesta por una aplicación web responsiva compatible con Chrome 146 y Firefox 134, y una aplicación móvil nativa para Android 13 y 14. El sistema cubre los siguientes procesos: registro y autenticación de usuarios con roles diferenciados (cliente, administrador, operador y supervisor), gestión de catálogo de vehículos con disponibilidad en tiempo real, reservas, pagos a través de Wompi (PSE, tarjetas crédito/débito, Nequi), generación de contratos en PDF, panel administrativo para gestión de flota, reportes en Word, PDF y Excel, auditoría del sistema y notificaciones. El sistema <strong>no incluye</strong> facturación electrónica con validez fiscal, integración contable avanzada, versión para iOS ni funcionalidad offline.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">1.3 Definiciones y términos</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Término</th><th>Descripción</th></tr>
+      <tr><td><strong>SRS</strong></td><td>Especificación de Requisitos de Software del proyecto.</td></tr>
+      <tr><td><strong>IDS</strong></td><td>Informe de Diseño de Software (este documento).</td></tr>
+      <tr><td><strong>API REST</strong></td><td>Interfaz de programación que expone servicios HTTP en formato JSON.</td></tr>
+      <tr><td><strong>JWT</strong></td><td>JSON Web Token, mecanismo de autenticación sin estado.</td></tr>
+      <tr><td><strong>Wompi</strong></td><td>Pasarela de pagos colombiana integrada para PSE, tarjetas y Nequi.</td></tr>
+      <tr><td><strong>OWASP</strong></td><td>Open Web Application Security Project, estándar de seguridad web.</td></tr>
+      <tr><td><strong>WCAG 2.1</strong></td><td>Pautas de accesibilidad al contenido web, nivel AA.</td></tr>
+      <tr><td><strong>CI/CD</strong></td><td>Integración y despliegue continuos mediante GitHub Actions.</td></tr>
+      <tr><td><strong>CRUD</strong></td><td>Operaciones: Crear, Leer, Actualizar y Eliminar.</td></tr>
+    </table>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">1.4 Documentos relacionados</h3>
+  <ul class="project-list">
+    <li>Especificación de Requisitos de Software (SRS) — Renta Movil Location, 2026.</li>
+    <li>Documento de Selección de Framework — Renta Movil Location, 2026.</li>
+    <li>Documento de Selección y Configuración de Herramientas de Desarrollo — Renta Movil Location, 2026.</li>
+    <li>Mockups en Figma del proyecto Renta Movil Location.</li>
+  </ul>
+
+  <!-- 2. DESCRIPCIÓN GENERAL -->
+  <div class="sub-header">
+    <span class="ra-tag">RA1</span>
+    <div><h2>2. Descripción General del Sistema</h2><div class="sub-desc">Objetivo, usuarios, funcionalidades y contexto del sistema.</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">2.1 Objetivo del sistema</h3>
+  <p>Desarrollar e implementar un sistema integral de alquiler de vehículos que optimice los procesos de reserva, contratación, gestión de flotas, pagos y generación de reportes, garantizando seguridad, eficiencia y accesibilidad tanto para clientes como para administradores, con el fin de mejorar la experiencia del usuario y fortalecer la competitividad de las empresas del sector.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">2.2 Usuarios del sistema</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Rol</th><th>Responsabilidades y actividades</th></tr>
+      <tr><td><span class="badge b-green">Cliente</span></td><td>Visualiza vehículos, realiza reservas, paga con Wompi, descarga contratos, califica el servicio y consulta su historial.</td></tr>
+      <tr><td><span class="badge b-blue">Administrador</span></td><td>Gestiona toda la plataforma: flota, reservas, contratos, pagos, usuarios, reportes y auditoría.</td></tr>
+      <tr><td><span class="badge b-gray">Operador</span></td><td>Registra la inspección y entrega del vehículo, reporta daños y gestiona el estado de la flota.</td></tr>
+      <tr><td><span class="badge b-gray">Supervisor</span></td><td>Supervisa operaciones, consulta auditorías y tiene acceso a todos los reportes del sistema.</td></tr>
+    </table>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">2.3 Funcionalidades principales</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Módulo</th><th>Función principal</th></tr>
+      <tr><td><strong>Gestión de usuarios</strong></td><td>Registro, autenticación JWT, recuperación de contraseña, roles y auditoría.</td></tr>
+      <tr><td><strong>Catálogo de vehículos</strong></td><td>Visualización con filtros, disponibilidad en tiempo real y detalle completo.</td></tr>
+      <tr><td><strong>Reservas</strong></td><td>Selección de fechas, sucursal, servicios adicionales, seguros y confirmación.</td></tr>
+      <tr><td><strong>Pagos (Wompi)</strong></td><td>PSE, tarjetas crédito/débito, Nequi, Efecty y Bancolombia a la mano.</td></tr>
+      <tr><td><strong>Contratos</strong></td><td>Generación y firma digital, descarga en PDF, historial de contratos.</td></tr>
+      <tr><td><strong>Panel administrativo</strong></td><td>Dashboard con KPIs, gestión de flota, reservas, clientes y auditoría.</td></tr>
+      <tr><td><strong>Reportes</strong></td><td>Generación en Word, PDF y Excel para finanzas, vehículos y usuarios.</td></tr>
+      <tr><td><strong>Mantenimiento</strong></td><td>Registro de mantenimientos, historial por vehículo y alertas de vencimiento.</td></tr>
+      <tr><td><strong>Notificaciones</strong></td><td>Confirmaciones de reserva, alertas de pago y vencimiento por correo y push.</td></tr>
+      <tr><td><strong>Auditoría</strong></td><td>Registro cifrado de todas las acciones del sistema, filtrable por fecha y rol.</td></tr>
+    </table>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">2.4 Contexto del sistema</h3>
+  <p>El sistema opera en dos plataformas: una aplicación web responsiva y una aplicación móvil nativa para Android 13 y 14. Ambas consumen la misma API REST del backend mediante protocolo HTTPS con autenticación JWT. La base de datos relacional PostgreSQL 17 almacena todas las entidades del sistema. Los pagos se procesan en tiempo real a través de la pasarela Wompi mediante webhooks. El control de versiones y CI/CD se gestiona con GitHub y GitHub Actions mediante una estrategia de ramas <strong>feature → dev → qa → staging → main</strong>.</p>
+
+  <!-- 3. ARQUITECTURA -->
+  <div class="sub-header">
+    <span class="ra-tag">RA1</span>
+    <div><h2>3. Arquitectura del Software</h2><div class="sub-desc">Arquitectura N Capas con API REST, diagrama de capas y estrategia CI/CD.</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">3.1 Tipo de arquitectura: N Capas con API REST</h3>
+  <p>El sistema implementa una arquitectura en N capas que separa claramente las responsabilidades de presentación, lógica de negocio y acceso a datos. Esta arquitectura garantiza escalabilidad, mantenibilidad y seguridad, cumpliendo los requerimientos no funcionales del SRS.</p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Capa</th><th>Responsabilidad</th><th>Tecnología</th></tr>
+      <tr><td><strong>Presentación (Web)</strong></td><td>Interfaz de usuario web responsiva, componentes React, navegación, formularios.</td><td>React 19 + Vite + Tailwind CSS</td></tr>
+      <tr><td><strong>Presentación (Móvil)</strong></td><td>Interfaz nativa Android, componentes React Native, navegación por pestañas.</td><td>React Native 0.81.5 + Expo SDK 54</td></tr>
+      <tr><td><strong>Lógica de Negocio</strong></td><td>Estado global, validaciones, hooks personalizados, servicios de negocio.</td><td>Zustand + Custom Hooks + Axios</td></tr>
+      <tr><td><strong>API REST</strong></td><td>Endpoints HTTP, autenticación JWT, validación de permisos por rol.</td><td>Backend Java (Spring Boot) / API REST</td></tr>
+      <tr><td><strong>Acceso a Datos</strong></td><td>Consultas SQL, ORM, transacciones ACID, gestión de entidades del sistema.</td><td>PostgreSQL 17 + Spring Data JPA + Hibernate</td></tr>
+    </table>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">3.2 Diagrama de capas</h3>
+  <div class="warn-box spaced-box" style="font-family:monospace;font-size:0.9rem;line-height:2;">
+    APP WEB — React 19 + Vite + Tailwind CSS<br>
+    APP MÓVIL ANDROID — React Native + Expo SDK 54<br>
+    ──────────────────────────────────────────────<br>
+    CAPA DE LÓGICA — Zustand + Custom Hooks + Axios<br>
+    ──────────────────────────────────────────────<br>
+    API REST — Backend Java Spring Boot (HTTPS + JWT + JSON)<br>
+    ──────────────────────────────────────────────<br>
+    BASE DE DATOS — PostgreSQL 17 (Transacciones ACID)
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">3.3 Estrategia de ramas y CI/CD</h3>
+  <p>El proyecto usa una estrategia de ramas por ambientes con GitHub Actions para integración y despliegue continuos:</p>
+  <ul class="project-list">
+    <li><strong>feature/nombre:</strong> desarrollo de funcionalidades individuales.</li>
+    <li><strong>dev:</strong> integración continua con pruebas básicas automatizadas (ESLint + Jest).</li>
+    <li><strong>qa:</strong> pruebas de integración completas con base de datos PostgreSQL 17 en contenedor.</li>
+    <li><strong>staging:</strong> réplica de producción para validación final del cliente.</li>
+    <li><strong>main:</strong> producción; solo recibe código validado y aprobado.</li>
+  </ul>
+
+  <!-- 4. MÓDULOS -->
+  <div class="sub-header">
+    <span class="ra-tag">RA1</span>
+    <div><h2>4. Diseño de Componentes o Módulos</h2><div class="sub-desc">9 módulos funcionales con entradas, procesos y salidas definidos.</div></div>
+  </div>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Módulo</th><th>Entrada</th><th>Proceso</th><th>Salida</th></tr>
+      <tr><td><strong>1. Gestión de Usuarios</strong></td><td>Datos del formulario, correo, contraseña</td><td>Validación, encriptación, asignación de rol, JWT</td><td>Sesión activa, token JWT, auditoría registrada</td></tr>
+      <tr><td><strong>2. Catálogo de Vehículos</strong></td><td>Filtros: categoría, precio, fecha, transmisión</td><td>Consulta a API REST, filtrado, disponibilidad en tiempo real</td><td>Lista de vehículos, detalle de vehículo, calendario</td></tr>
+      <tr><td><strong>3. Reservas</strong></td><td>Fechas, sucursal, tipo de seguro, servicios adicionales</td><td>Validación de disponibilidad, cálculo de tarifa, generación de resumen</td><td>Reserva confirmada, código único, notificación</td></tr>
+      <tr><td><strong>4. Pagos (Wompi)</strong></td><td>Método de pago, datos de tarjeta o PSE</td><td>Integración Wompi API, validación webhook, confirmación</td><td>Pago confirmado, comprobante PDF, actualización de reserva</td></tr>
+      <tr><td><strong>5. Contratos</strong></td><td>Datos de la reserva, firma digital del cliente</td><td>Generación de contrato PDF, firma, almacenamiento</td><td>Contrato PDF descargable, auditoría, notificación</td></tr>
+      <tr><td><strong>6. Panel Administrativo</strong></td><td>Credenciales de administrador, acciones CRUD</td><td>Gestión de flota, reservas, clientes, reportes</td><td>Dashboard KPIs, listas actualizadas, exportaciones</td></tr>
+      <tr><td><strong>7. Reportes</strong></td><td>Filtros de fecha, tipo de reporte</td><td>Consulta BD, generación de archivo en formato seleccionado</td><td>Archivo Word, PDF o Excel descargable</td></tr>
+      <tr><td><strong>8. Auditoría</strong></td><td>Acción del usuario, rol, timestamp</td><td>Registro cifrado en BD, asociación a usuario y módulo</td><td>Log auditado, filtrable y exportable en PDF</td></tr>
+      <tr><td><strong>9. Notificaciones</strong></td><td>Evento del sistema (reserva, pago, vencimiento)</td><td>Envío SMTP por correo, push notification en app móvil</td><td>Notificación entregada al usuario y/o administrador</td></tr>
+    </table>
+  </div>
+
+  <!-- 5. DIAGRAMAS UML -->
+  <div class="sub-header">
+    <span class="ra-tag">RA1</span>
+    <div><h2>5. Diagramas del Sistema (UML)</h2><div class="sub-desc">Casos de uso, clases y flujo de secuencia del proceso de reserva.</div></div>
+  </div>
+  <p>Los diagramas completos en formato gráfico se encuentran en los documentos anexos del SRS del proyecto.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">5.1 Diagrama de Casos de Uso (resumen)</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Actor</th><th>Casos de uso principales</th></tr>
+      <tr><td><span class="badge b-green">Cliente</span></td><td>Registrarse, iniciar sesión, ver catálogo, hacer reserva, pagar, descargar contrato, calificar servicio, consultar historial.</td></tr>
+      <tr><td><span class="badge b-blue">Administrador</span></td><td>Gestionar flota, administrar reservas y contratos, generar reportes, administrar usuarios, consultar auditoría.</td></tr>
+      <tr><td><span class="badge b-gray">Operador</span></td><td>Registrar inspección y entrega, reportar daños, actualizar estado del vehículo.</td></tr>
+      <tr><td><span class="badge b-gray">Supervisor</span></td><td>Consultar auditorías, supervisar operaciones, acceder a reportes completos del sistema.</td></tr>
+      <tr><td><span class="badge b-gray">Invitado</span></td><td>Ver catálogo de vehículos y disponibilidad sin posibilidad de reservar ni pagar.</td></tr>
+    </table>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">5.2 Diagrama de Clases (entidades principales)</h3>
+  <ul class="project-list">
+    <li><strong>Usuario</strong> (id, nombre, apellido, correo, contraseña_hash, teléfono, rol, activo, creado_en) → tiene muchas Reservas.</li>
+    <li><strong>Vehículo</strong> (id, placa, marca, modelo, año, categoría, estado, sucursal_id, tarifa_diaria) → tiene muchas Reservas y Mantenimientos.</li>
+    <li><strong>Reserva</strong> (id, usuario_id, vehículo_id, fecha_inicio, fecha_fin, estado, tarifa_total, código_único) → tiene un Contrato y un Pago.</li>
+    <li><strong>Contrato</strong> (id, reserva_id, pdf_url, firma_digital, fecha_generación) → asociado a una Reserva.</li>
+    <li><strong>Pago</strong> (id, reserva_id, método, monto, estado, referencia_wompi, fecha_pago) → confirma una Reserva.</li>
+    <li><strong>Mantenimiento</strong> (id, vehículo_id, tipo, descripción, fecha, estado) → asociado a un Vehículo.</li>
+    <li><strong>Auditoría</strong> (id, usuario_id, acción, módulo, timestamp, ip_origen) → registra toda acción del sistema.</li>
+  </ul>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">5.3 Flujo de secuencia — Proceso de reserva</h3>
+  <div class="warn-box spaced-box" style="font-family:monospace;font-size:0.88rem;line-height:1.9;">
+    Cliente → App (web o móvil) → API REST → Base de datos<br>
+    1. Cliente selecciona fechas y vehículo.<br>
+    2. App consulta disponibilidad a la API REST.<br>
+    3. API consulta la BD y retorna disponibilidad.<br>
+    4. Cliente confirma la reserva.<br>
+    5. App envía los datos a la API.<br>
+    6. API crea la reserva en BD y devuelve el código único.<br>
+    7. App muestra la confirmación y redirige al módulo de pago.
+  </div>
+
+  <!-- 6. BASE DE DATOS -->
+  <div class="sub-header">
+    <span class="ra-tag">RA1</span>
+    <div><h2>6. Diseño de Base de Datos</h2><div class="sub-desc">Motor PostgreSQL 17, tablas principales y script de prueba.</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">6.1 Motor y características</h3>
+  <p><strong>Motor: PostgreSQL 17.</strong> Características principales: transacciones ACID completas (crítico para el módulo de pagos), soporte nativo de UUID para identificadores de reservas y contratos, tipo JSONB para almacenamiento de configuraciones y datos de reportes, y compatibilidad con el ecosistema Java mediante Spring Data JPA e Hibernate como ORM.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">6.2 Tablas principales del sistema</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Tabla</th><th>Campos principales</th><th>Relaciones</th></tr>
+      <tr><td><strong>usuarios</strong></td><td>id (UUID PK), nombre, apellido, correo (UNIQUE), contraseña_hash, teléfono, rol, activo, creado_en</td><td>1:N con reservas, auditorías</td></tr>
+      <tr><td><strong>vehículos</strong></td><td>id (UUID PK), placa (UNIQUE), marca, modelo, año, categoría_id, estado, sucursal_id, tarifa_diaria, km_inicial</td><td>1:N con reservas, mantenimientos. N:1 con sucursales, categorías</td></tr>
+      <tr><td><strong>reservas</strong></td><td>id (UUID PK), usuario_id (FK), vehículo_id (FK), fecha_inicio, fecha_fin, estado, tarifa_total, código_único</td><td>N:1 con usuarios y vehículos. 1:1 con contratos y pagos</td></tr>
+      <tr><td><strong>contratos</strong></td><td>id (UUID PK), reserva_id (FK), pdf_url, firma_digital, fecha_generación, estado</td><td>1:1 con reservas</td></tr>
+      <tr><td><strong>pagos</strong></td><td>id (UUID PK), reserva_id (FK), método, monto, estado, referencia_wompi, fecha_pago</td><td>1:1 con reservas</td></tr>
+      <tr><td><strong>mantenimientos</strong></td><td>id (UUID PK), vehículo_id (FK), tipo, descripción, fecha_programada, estado</td><td>N:1 con vehículos</td></tr>
+      <tr><td><strong>sucursales</strong></td><td>id (UUID PK), nombre, dirección, horarios, teléfono, coordenadas</td><td>1:N con vehículos</td></tr>
+      <tr><td><strong>categorías</strong></td><td>id (UUID PK), nombre, descripción, tarifa_base</td><td>1:N con vehículos</td></tr>
+      <tr><td><strong>servicios_adicionales</strong></td><td>id (UUID PK), nombre, descripción, precio</td><td>N:N con reservas</td></tr>
+      <tr><td><strong>auditorías</strong></td><td>id (UUID PK), usuario_id (FK), acción, módulo, timestamp, ip_origen, datos_cifrados</td><td>N:1 con usuarios</td></tr>
+    </table>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">6.3 Script de prueba — Tabla usuarios</h3>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+CREATE TABLE IF NOT EXISTS usuarios (
+  id          UUID         PRIMARY KEY DEFAULT uuid_generate_v4(),
+  nombre      VARCHAR(100) NOT NULL,
+  correo      VARCHAR(150) NOT NULL UNIQUE,
+  rol         VARCHAR(20)  NOT NULL DEFAULT 'cliente'
+              CHECK (rol IN ('cliente','administrador','operador','supervisor')),
+  activo      BOOLEAN      NOT NULL DEFAULT TRUE,
+  creado_en   TIMESTAMP    NOT NULL DEFAULT NOW()
+);</pre>
+
+  <!-- 7. INTERFACES -->
+  <div class="sub-header">
+    <span class="ra-tag">RA1</span>
+    <div><h2>7. Diseño de Interfaces</h2><div class="sub-desc">Pantallas de la app web, flujo de navegación y principios de diseño.</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">7.1 Pantallas de la aplicación web</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Pantalla</th><th>Descripción</th></tr>
+      <tr><td><strong>Login / Registro</strong></td><td>Formulario de 2 pasos con validación en tiempo real, indicador de fortaleza de contraseña y opción de continuar como invitado.</td></tr>
+      <tr><td><strong>Recuperación de contraseña</strong></td><td>Envío de enlace al correo, formulario de nueva contraseña y confirmación de cambio exitoso.</td></tr>
+      <tr><td><strong>Catálogo de vehículos</strong></td><td>Grilla de tarjetas con filtros por categoría, precio, transmisión y combustible. Accesible para invitados.</td></tr>
+      <tr><td><strong>Detalle del vehículo</strong></td><td>Fotos, características, tarifas, disponibilidad y botón de reservar.</td></tr>
+      <tr><td><strong>Proceso de reserva</strong></td><td>Calendario de disponibilidad, selección de sucursal en mapa, servicios adicionales, cobertura de seguro y resumen.</td></tr>
+      <tr><td><strong>Pago</strong></td><td>Resumen del costo, selección de método Wompi (PSE, tarjeta, Nequi), confirmación y descarga de factura PDF.</td></tr>
+      <tr><td><strong>Mis reservas</strong></td><td>Historial de reservas activas y pasadas, estado, detalle y descarga de contrato.</td></tr>
+      <tr><td><strong>Perfil de usuario</strong></td><td>Edición de datos personales, cambio de contraseña, subida de licencia de conducir.</td></tr>
+      <tr><td><strong>Panel administrativo</strong></td><td>Dashboard con KPIs (ingresos, reservas activas, vehículos disponibles), gestión de flota, clientes y auditoría.</td></tr>
+      <tr><td><strong>Reportes</strong></td><td>Generación de reportes financieros, de vehículos y usuarios, exportables en Word, PDF y Excel.</td></tr>
+    </table>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">7.2 Flujo de navegación principal</h3>
+  <div class="warn-box spaced-box" style="font-family:monospace;font-size:0.88rem;line-height:2;">
+    <strong>Cliente:</strong> Inicio / Login → Catálogo de vehículos → Detalle del vehículo → Proceso de reserva → Pago → Confirmación y descarga de contrato<br>
+    <strong>Administrador:</strong> Login → Dashboard → Gestión de módulos (flota, reservas, clientes, reportes, auditoría)
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">7.3 Principios de diseño de interfaz</h3>
+  <ul class="project-list">
+    <li>Responsiva y adaptable tanto para web (Chrome 146, Firefox 134) como para Android 13 y 14.</li>
+    <li>Cumplimiento de WCAG 2.1 nivel AA en la versión web (contraste, etiquetas ARIA, navegación por teclado).</li>
+    <li>Validación en tiempo real en todos los formularios con mensajes de error claros y específicos.</li>
+    <li>Componentes reutilizables: tarjetas de vehículo, formularios, tablas, modales y botones de acción.</li>
+    <li>Consistencia visual mediante el sistema de diseño definido en Figma (paleta de colores corporativos, tipografía y espaciado uniforme).</li>
+  </ul>
+
+  <!-- 8. REGLAS DE NEGOCIO -->
+  <div class="sub-header">
+    <span class="ra-tag">RA1</span>
+    <div><h2>8. Reglas de Negocio</h2><div class="sub-desc">15 reglas de negocio que rigen el comportamiento del sistema.</div></div>
+  </div>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>N°</th><th>Módulo</th><th>Regla</th></tr>
+      <tr><td><strong>RN01</strong></td><td>Usuarios</td><td>No se permite registrar dos usuarios con el mismo correo electrónico.</td></tr>
+      <tr><td><strong>RN02</strong></td><td>Usuarios</td><td>El usuario debe ser mayor de 18 años para registrarse en el sistema.</td></tr>
+      <tr><td><strong>RN03</strong></td><td>Usuarios</td><td>Después de 5 intentos fallidos de inicio de sesión, la cuenta queda bloqueada temporalmente.</td></tr>
+      <tr><td><strong>RN04</strong></td><td>Usuarios</td><td>Un cliente debe cargar y tener aprobada su licencia de conducir antes de poder realizar una reserva.</td></tr>
+      <tr><td><strong>RN05</strong></td><td>Vehículos</td><td>Un vehículo en estado 'mantenimiento' o 'inactivo' no puede ser reservado.</td></tr>
+      <tr><td><strong>RN06</strong></td><td>Vehículos</td><td>No se permite registrar dos vehículos con la misma placa.</td></tr>
+      <tr><td><strong>RN07</strong></td><td>Reservas</td><td>Un vehículo no puede tener dos reservas activas para el mismo periodo de fechas.</td></tr>
+      <tr><td><strong>RN08</strong></td><td>Reservas</td><td>La fecha de inicio de la reserva debe ser igual o posterior a la fecha actual del sistema.</td></tr>
+      <tr><td><strong>RN09</strong></td><td>Reservas</td><td>El estado de la reserva solo puede cambiar según la secuencia: pendiente → confirmada → en_curso → finalizada / cancelada.</td></tr>
+      <tr><td><strong>RN10</strong></td><td>Pagos</td><td>Una reserva solo queda confirmada cuando el pago ha sido validado exitosamente por Wompi mediante webhook.</td></tr>
+      <tr><td><strong>RN11</strong></td><td>Pagos</td><td>Los pagos se procesan únicamente en pesos colombianos (COP) a través de Wompi.</td></tr>
+      <tr><td><strong>RN12</strong></td><td>Contratos</td><td>El contrato se genera automáticamente al confirmar el pago y debe ser firmado digitalmente por el cliente.</td></tr>
+      <tr><td><strong>RN13</strong></td><td>Contratos</td><td>Un contrato firmado no puede ser eliminado del sistema; solo puede marcarse como anulado.</td></tr>
+      <tr><td><strong>RN14</strong></td><td>Auditoría</td><td>Toda acción administrativa (creación, edición, eliminación) queda registrada en el módulo de auditoría. Los registros de auditoría no pueden ser eliminados.</td></tr>
+      <tr><td><strong>RN15</strong></td><td>Roles</td><td>Solo el administrador puede asignar o modificar roles de usuarios. Un cliente no puede acceder al panel administrativo.</td></tr>
+    </table>
+  </div>
+
+  <!-- 9. SEGURIDAD -->
+  <div class="sub-header">
+    <span class="ra-tag">RA1</span>
+    <div><h2>9. Seguridad del Sistema</h2><div class="sub-desc">Autenticación JWT, protección de datos y OWASP Top 10.</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">9.1 Autenticación y autorización</h3>
+  <ul class="project-list">
+    <li><strong>JWT (JSON Web Token):</strong> todos los endpoints de la API REST requieren un token JWT válido en el encabezado <code>Authorization: Bearer {token}</code>.</li>
+    <li><strong>Roles diferenciados:</strong> cliente, administrador, operador y supervisor. Cada rol tiene acceso únicamente a los endpoints y vistas que le corresponden.</li>
+    <li><strong>Expiración de tokens:</strong> los tokens JWT tienen un tiempo de expiración definido. Al expirar, el usuario debe iniciar sesión nuevamente.</li>
+    <li><strong>Almacenamiento seguro del token:</strong> en la app móvil se usa Expo SecureStore; en la web se gestiona mediante estado protegido en Zustand.</li>
+  </ul>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">9.2 Protección de datos y comunicaciones</h3>
+  <ul class="project-list">
+    <li>Cifrado SSL/TLS en todas las comunicaciones entre el cliente y el servidor (protocolo HTTPS obligatorio).</li>
+    <li>Las contraseñas se almacenan en la base de datos únicamente en formato hash (bcrypt), nunca en texto plano.</li>
+    <li>Los datos bancarios de Wompi se gestionan mediante tokenización; el sistema nunca almacena números de tarjetas.</li>
+    <li>Los registros de auditoría se cifran en la base de datos para proteger la integridad del historial de acciones.</li>
+  </ul>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">9.3 Protección contra vulnerabilidades OWASP Top 10</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Vulnerabilidad OWASP</th><th>Mecanismo de protección implementado</th></tr>
+      <tr><td><strong>Inyección SQL</strong></td><td>Uso de Spring Data JPA con consultas parametrizadas; nunca se concatenan datos del usuario en SQL.</td></tr>
+      <tr><td><strong>Autenticación rota</strong></td><td>JWT con expiración, bloqueo tras 5 intentos fallidos y renovación segura de tokens.</td></tr>
+      <tr><td><strong>Exposición de datos sensibles</strong></td><td>HTTPS obligatorio, contraseñas en hash, datos bancarios tokenizados.</td></tr>
+      <tr><td><strong>Control de acceso roto</strong></td><td>Validación de rol en cada endpoint de la API antes de ejecutar cualquier acción.</td></tr>
+      <tr><td><strong>XSS (Cross-Site Scripting)</strong></td><td>React escapa automáticamente el contenido renderizado; validación adicional en el backend.</td></tr>
+    </table>
+  </div>
+
+  <!-- 10. ESPECIFICACIONES TÉCNICAS -->
+  <div class="sub-header">
+    <span class="ra-tag">RA1</span>
+    <div><h2>10. Especificaciones Técnicas</h2><div class="sub-desc">Stack tecnológico completo del sistema.</div></div>
+  </div>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Componente</th><th>Tecnología / Versión</th><th>Propósito</th></tr>
+      <tr><td>Frontend Web</td><td>React 19.1.0 + Vite + TypeScript</td><td>Aplicación web responsiva</td></tr>
+      <tr><td>Frontend Móvil</td><td>React Native 0.81.5 + Expo SDK 54</td><td>App nativa Android 13 y 14</td></tr>
+      <tr><td>Navegación Web</td><td>React Router DOM</td><td>Enrutamiento de la app web</td></tr>
+      <tr><td>Navegación Móvil</td><td>Expo Router ~6.0.23</td><td>Enrutamiento por archivos (móvil)</td></tr>
+      <tr><td>Estado Global</td><td>Zustand</td><td>Manejo de estado en web y móvil</td></tr>
+      <tr><td>Peticiones HTTP</td><td>Axios</td><td>Comunicación con la API REST</td></tr>
+      <tr><td>Caché de datos</td><td>@tanstack/react-query v5</td><td>Caché y sincronización de datos</td></tr>
+      <tr><td>Estilos Web</td><td>Tailwind CSS</td><td>Sistema de diseño de la app web</td></tr>
+      <tr><td>Base de datos</td><td>PostgreSQL 17</td><td>Motor relacional del sistema</td></tr>
+      <tr><td>Control de versiones</td><td>Git 2.40+ + GitHub</td><td>Versionamiento del código fuente</td></tr>
+      <tr><td>CI/CD</td><td>GitHub Actions</td><td>Integración y despliegue continuos</td></tr>
+      <tr><td>Editor de código</td><td>Visual Studio Code + extensiones</td><td>Entorno de desarrollo unificado</td></tr>
+      <tr><td>Pruebas API</td><td>Thunder Client (VS Code)</td><td>Pruebas de endpoints REST</td></tr>
+      <tr><td>Autenticación</td><td>JWT (JSON Web Token)</td><td>Seguridad y control de acceso por rol</td></tr>
+      <tr><td>Pasarela de pagos</td><td>Wompi API</td><td>PSE, tarjetas, Nequi, Efecty</td></tr>
+      <tr><td>Backend / API REST</td><td>Java 21 LTS (Spring Boot 3.x)</td><td>Lenguaje del backend y API REST del proyecto</td></tr>
+      <tr><td>Diseño de mockups</td><td>Figma</td><td>Referencia visual durante el desarrollo</td></tr>
+    </table>
+  </div>
+
+  <!-- 11. CONSIDERACIONES -->
+  <div class="sub-header">
+    <span class="ra-tag">RA1</span>
+    <div><h2>11. Consideraciones de Implementación</h2><div class="sub-desc">Estándares, estructura, patrones, errores, pruebas y anti-patrones.</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">11.1 Estándares de codificación</h3>
+  <ul class="project-list">
+    <li><strong>Lenguaje:</strong> TypeScript en ambas plataformas (web y móvil) para detección de errores en tiempo de desarrollo.</li>
+    <li><strong>Formato:</strong> Prettier con configuración compartida (.prettierrc): comillas simples, punto y coma, 2 espacios de sangría, ancho máximo de 80 caracteres.</li>
+    <li><strong>Calidad de código:</strong> ESLint con reglas para React y React Native activado en VS Code con validación automática.</li>
+    <li><strong>Convención de nombres:</strong> componentes en PascalCase, funciones y variables en camelCase, constantes en UPPER_SNAKE_CASE, archivos de componentes en PascalCase.tsx.</li>
+    <li><strong>Commits:</strong> mensajes en español con prefijo descriptivo (feat:, fix:, refactor:, docs:, test:).</li>
+    <li><strong>Sangría y autoguardado:</strong> 2 espacios, formateo automático al guardar activado en VS Code.</li>
+  </ul>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">11.2 Estructura del proyecto</h3>
+  <ul class="project-list">
+    <li><strong>App móvil:</strong> arquitectura modular en carpetas app/ (rutas Expo Router), components/, modules/, store/, services/, hooks/.</li>
+    <li><strong>App web:</strong> arquitectura modular en src/modules/, src/components/, src/store/, src/services/, src/hooks/, src/routes/.</li>
+    <li>Cada módulo contiene: components/ (presentación), hooks/ (lógica), services/ (API), types/ (interfaces TypeScript).</li>
+    <li><strong>Variables de entorno:</strong> archivos .env por ambiente (development, qa, staging, production) con prefijos EXPO_PUBLIC_ en móvil y VITE_ en web. Nunca se suben al repositorio.</li>
+  </ul>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">11.3 Patrones de diseño aplicados</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Patrón</th><th>Implementación en el proyecto</th><th>Beneficio</th></tr>
+      <tr><td><strong>Composite</strong></td><td>Componentes inteligentes y tontos (Smart/Dumb)</td><td>Separación lógica-presentación, reutilización</td></tr>
+      <tr><td><strong>Template Method</strong></td><td>Custom Hooks (useReservas, useVehiculos, useAuth)</td><td>Reutilización de lógica común entre módulos</td></tr>
+      <tr><td><strong>Facade</strong></td><td>Capa de servicios (VehiculosService.java)</td><td>Centraliza llamadas a API, fácil de mantener</td></tr>
+      <tr><td><strong>Strategy</strong></td><td>Rutas protegidas por rol (Expo Router / React Router)</td><td>Seguridad de navegación según rol JWT</td></tr>
+      <tr><td><strong>Observer</strong></td><td>Estado global con Zustand</td><td>Actualización automática de componentes</td></tr>
+    </table>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">11.4 Manejo de errores</h3>
+  <ul class="project-list">
+    <li>Todas las llamadas a la API deben manejar los estados: cargando (loading), éxito (success) y error, mostrando indicadores visuales al usuario.</li>
+    <li>Los errores de la API se centralizan en la capa de servicios y se propagan mediante el sistema de estados de @tanstack/react-query.</li>
+    <li>Los errores críticos del sistema se registran en el módulo de auditoría con timestamp y contexto del usuario.</li>
+    <li>La app muestra pantallas de error amigables con opción de reintentar la acción fallida.</li>
+  </ul>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">11.5 Pruebas del sistema</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Tipo de prueba</th><th>Herramienta</th><th>Ambiente</th></tr>
+      <tr><td>Pruebas unitarias</td><td>Jest + React Testing Library</td><td>dev — ejecutadas automáticamente en CI</td></tr>
+      <tr><td>Pruebas de integración</td><td>Jest con base de datos PostgreSQL en contenedor</td><td>qa — ejecutadas en pipeline de GitHub Actions</td></tr>
+      <tr><td>Pruebas de API REST</td><td>Thunder Client (VS Code)</td><td>dev y qa — pruebas manuales de endpoints</td></tr>
+      <tr><td>Pruebas de interfaz</td><td>Expo Go en dispositivo Android físico</td><td>dev — pruebas visuales continuas</td></tr>
+      <tr><td>Pruebas de calidad de código</td><td>ESLint + Prettier</td><td>Todos los ambientes — validación en cada commit</td></tr>
+    </table>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">11.6 Anti-patrones a evitar</h3>
+  <ul class="project-list">
+    <li><strong>Prop drilling excesivo:</strong> si un dato se necesita en múltiples niveles, usar Zustand o Context API.</li>
+    <li><strong>Lógica de negocio en componentes visuales:</strong> las llamadas a la API van en services/ o custom hooks, nunca directamente en el componente.</li>
+    <li><strong>localStorage en React Native:</strong> usar Expo SecureStore para almacenamiento persistente seguro.</li>
+    <li><strong>Estilos CSS de web en la app móvil:</strong> en React Native usar StyleSheet o NativeWind; Tailwind no funciona directamente.</li>
+    <li><strong>Commits directos a main o staging:</strong> todo cambio debe pasar por pull request con revisión aprobada.</li>
+  </ul>
+
+</div><!-- fin RA1 -->
+
+
+<!-- ══════════════════════════════════════════
+     RA2
+══════════════════════════════════════════ -->
+<div class="ra-section" id="sec-ra2">
+  <div class="ra-chip">RA2 — Resultado de Aprendizaje</div>
+  <div class="ra-h1">Seleccionar y Configurar Herramientas de Desarrollo</div>
+  <div class="ra-h1-sub">Identificación, justificación e instalación de todas las herramientas necesarias para construir el proyecto Renta Movil Location.</div>
+
+  <div style="margin: 0.8rem 0 1.2rem; text-align: center;">
+    <a href="https://drive.google.com/file/d/1QQTiJNwE58oVIpz10w5LhrLwWhbGvt7n/view?usp=sharing"
+       target="_blank"
+       style="display:inline-flex;align-items:center;gap:0.5rem;background:#2E75B6;color:#fff;padding:0.55rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:600;">
+      📄 Ver documento completo en Drive
+    </a>
+  </div>
+
+  <div class="sub-header">
+    <span class="ra-tag">RA2</span>
+    <div><h2>Datos del documento</h2><div class="sub-desc">Integrantes, instructor e institución.</div></div>
+  </div>
+  <div class="feat-grid spaced-grid">
+    <div class="feat-card"><div class="feat-card-title">Integrantes</div><div class="feat-card-body">Laura Vanessa Perez Perdomo · Danna Valentina Barrios Penagos · Emily Sharith Amezquita Saavedra</div></div>
+    <div class="feat-card"><div class="feat-card-title">Instructor</div><div class="feat-card-body">José de Jesús Motta Vargas</div></div>
+    <div class="feat-card"><div class="feat-card-title">Programa</div><div class="feat-card-body">Tecnólogo en Análisis y Desarrollo de Software · Ficha: 3145555</div></div>
+    <div class="feat-card"><div class="feat-card-title">Institución</div><div class="feat-card-body">SENA — Sede Industrial, Centro de la Industria, la Empresa y los Servicios · Neiva-Huila · 2026</div></div>
+  </div>
+
+  <!-- 1. INTRODUCCIÓN -->
+  <div class="sub-header">
+    <span class="ra-tag">RA2</span>
+    <div><h2>1. Analizar el Diseño del Sistema</h2><div class="sub-desc">Tipo de sistema, arquitectura, lenguajes y componentes identificados en los documentos técnicos.</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Tipo de sistema</h3>
+  <p>El proyecto Renta Movil Location es un sistema de tipo web y móvil. Tiene dos plataformas independientes: una aplicación web responsiva compatible con Chrome 146 y Firefox 134, y una aplicación móvil nativa para Android 13 y 14 que se instala directamente en el dispositivo. Ambas plataformas consumen la misma API REST del backend.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Arquitectura del software</h3>
+  <p>La arquitectura es N capas con API REST, definida en el Informe de Diseño de Software y confirmada en el documento de Selección de Framework:</p>
+  <ul class="project-list">
+    <li><strong>Capa de presentación web:</strong> React 19 + Vite + Tailwind CSS</li>
+    <li><strong>Capa de presentación móvil:</strong> React Native 0.81.5 + Expo SDK 54</li>
+    <li><strong>Capa de lógica compartida:</strong> Zustand + Axios</li>
+    <li><strong>Capa de API REST:</strong> Java 21 LTS + Spring Boot 3.x</li>
+    <li><strong>Capa de acceso a datos:</strong> PostgreSQL 17 + Spring Data JPA + Hibernate</li>
+  </ul>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Lenguajes de programación propuestos</h3>
+  <ul class="project-list">
+    <li><strong>Frontend web y móvil:</strong> TypeScript</li>
+    <li><strong>Backend y API REST:</strong> Java 21 LTS</li>
+  </ul>
+  <p>TypeScript fue seleccionado porque tanto React web como React Native móvil comparten el mismo lenguaje y paradigma, lo que permite al equipo compartir lógica de negocio entre ambas plataformas sin aprender dos tecnologías diferentes.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Base de datos</h3>
+  <p>PostgreSQL 17 es el motor de base de datos relacional del proyecto. Fue seleccionado porque soporta transacciones ACID completas (crítico para el módulo de pagos), tiene UUID nativos para identificadores de reservas y contratos, soporta tipo JSONB para configuraciones y reportes, y es completamente compatible con Spring Data JPA e Hibernate.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Componentes del sistema</h3>
+  <p>El sistema tiene los siguientes módulos principales, identificados en el SRS y en el documento de Selección de Framework:</p>
+  <ul class="project-list">
+    <li>Autenticación con JWT y roles: cliente, administrador, operador y supervisor.</li>
+    <li>Catálogo de vehículos con filtros y calendario de disponibilidad en tiempo real.</li>
+    <li>Reservas de vehículos.</li>
+    <li>Pagos integrados con Wompi: PSE, tarjetas crédito/débito y Nequi.</li>
+    <li>Contratos generados en PDF.</li>
+    <li>Panel administrativo con dashboard y KPIs.</li>
+    <li>Reportes en Word, PDF y Excel.</li>
+    <li>Auditoría del sistema.</li>
+    <li>Notificaciones para clientes y administradores.</li>
+    <li>Mantenimiento de flota vehicular.</li>
+  </ul>
+  <p>Los mockups en Figma comprenden más de 32 pantallas entre la versión web y la versión móvil, con componentes reutilizables como tarjetas de vehículo, formularios, tablas, calendarios, modales y barras de navegación.</p>
+
+  <!-- 2. IDENTIFICAR -->
+  <div class="sub-header">
+    <span class="ra-tag">RA2</span>
+    <div><h2>2. Identificar las Herramientas Necesarias</h2><div class="sub-desc">Tipos de herramientas requeridas según el análisis del diseño del sistema.</div></div>
+  </div>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Tipo de herramienta</th><th>Función</th></tr>
+      <tr><td><strong>IDE</strong></td><td>Programar el software en TypeScript y Java desde un solo entorno para ambas plataformas.</td></tr>
+      <tr><td><strong>Lenguaje de programación</strong></td><td>Construir la lógica del sistema en el frontend web, el frontend móvil y el backend.</td></tr>
+      <tr><td><strong>Framework frontend web</strong></td><td>Construir las más de 32 pantallas de la aplicación web con componentes reutilizables.</td></tr>
+      <tr><td><strong>Framework frontend móvil</strong></td><td>Construir las más de 32 pantallas de la aplicación móvil nativa para Android 13 y 14.</td></tr>
+      <tr><td><strong>Framework backend</strong></td><td>Construir la API REST con autenticación JWT, acceso a base de datos y generación de reportes.</td></tr>
+      <tr><td><strong>Base de datos</strong></td><td>Almacenar toda la información del sistema con integridad, seguridad y soporte de transacciones.</td></tr>
+      <tr><td><strong>Control de versiones</strong></td><td>Gestionar los cambios del código fuente del proyecto entre los integrantes del equipo.</td></tr>
+      <tr><td><strong>Herramientas de CI/CD</strong></td><td>Automatizar las pruebas y el despliegue del código en cada rama del repositorio.</td></tr>
+      <tr><td><strong>Herramientas de pruebas</strong></td><td>Verificar el funcionamiento del frontend, del backend y de los endpoints de la API REST.</td></tr>
+      <tr><td><strong>Herramientas de diseño y modelado</strong></td><td>Consultar los mockups aprobados durante el desarrollo de cada pantalla.</td></tr>
+    </table>
+  </div>
+
+  <!-- 3. SELECCIONAR -->
+  <div class="sub-header">
+    <span class="ra-tag">RA2</span>
+    <div><h2>3. Seleccionar Herramientas de Desarrollo</h2><div class="sub-desc">Herramienta elegida para cada tipo identificado.</div></div>
+  </div>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Tipo</th><th>Herramienta seleccionada</th></tr>
+      <tr><td>IDE</td><td>Visual Studio Code</td></tr>
+      <tr><td>Lenguaje backend</td><td>Java 21 LTS</td></tr>
+      <tr><td>Lenguaje frontend</td><td>TypeScript con Node.js LTS 22.x</td></tr>
+      <tr><td>Framework backend</td><td>Spring Boot 3.x con Maven</td></tr>
+      <tr><td>Framework frontend web</td><td>React 19 + Vite</td></tr>
+      <tr><td>Framework frontend móvil</td><td>React Native 0.81.5 + Expo SDK 54</td></tr>
+      <tr><td>Enrutamiento web</td><td>React Router DOM</td></tr>
+      <tr><td>Enrutamiento móvil</td><td>Expo Router ~6.0.23</td></tr>
+      <tr><td>Estado global</td><td>Zustand</td></tr>
+      <tr><td>Peticiones HTTP</td><td>Axios</td></tr>
+      <tr><td>Caché de datos</td><td>@tanstack/react-query v5</td></tr>
+      <tr><td>Estilos web</td><td>Tailwind CSS</td></tr>
+      <tr><td>Almacenamiento seguro móvil</td><td>Expo SecureStore</td></tr>
+      <tr><td>Notificaciones móvil</td><td>Expo Notifications</td></tr>
+      <tr><td>Base de datos</td><td>PostgreSQL 17 + pgAdmin 4</td></tr>
+      <tr><td>ORM</td><td>Spring Data JPA + Hibernate</td></tr>
+      <tr><td>Control de versiones</td><td>Git 2.40+ y GitHub</td></tr>
+      <tr><td>CI/CD</td><td>GitHub Actions</td></tr>
+      <tr><td>Pruebas de API</td><td>Thunder Client</td></tr>
+      <tr><td>Pruebas frontend</td><td>Jest + React Testing Library</td></tr>
+      <tr><td>Pruebas backend</td><td>JUnit 5 + Mockito</td></tr>
+      <tr><td>Pruebas en dispositivo</td><td>Expo Go</td></tr>
+      <tr><td>Diseño y modelado</td><td>Figma</td></tr>
+    </table>
+  </div>
+
+  <!-- 4. JUSTIFICAR -->
+  <div class="sub-header">
+    <span class="ra-tag">RA2</span>
+    <div><h2>4. Justificar la Selección de Herramientas</h2><div class="sub-desc">Cada herramienta responde a una necesidad concreta del sistema.</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">IDE — Visual Studio Code</h3>
+  <p>Es gratuito, extensible y soporta TypeScript, React, React Native, Java y PostgreSQL desde un mismo entorno mediante extensiones, sin costo de licencias para el equipo. Permite gestionar las más de 32 pantallas web y las más de 32 pantallas móviles desde un solo editor.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Lenguaje backend — Java 21 LTS</h3>
+  <p>Tiene soporte de largo plazo garantizado por al menos 8 años. Ofrece un ecosistema maduro e integración nativa con Spring Boot, JPA e Hibernate. Es el lenguaje más robusto para construir APIs REST seguras con autenticación JWT.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Lenguaje frontend — TypeScript con Node.js LTS 22.x</h3>
+  <p>TypeScript detecta errores en tiempo de desarrollo antes de ejecutar el código. Node.js es necesario para ejecutar Vite y Expo CLI. Ambas plataformas (web y móvil) comparten el mismo lenguaje, reduciendo la curva de aprendizaje del equipo.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Framework backend — Spring Boot 3.x con Maven</h3>
+  <p>Simplifica la configuración del servidor, la seguridad JWT y el acceso a datos. Maven gestiona todas las dependencias del proyecto Java a través del archivo pom.xml. Incluye JUnit 5 y Mockito para pruebas automatizadas.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Framework frontend web — React 19 + Vite</h3>
+  <p>React es el framework más usado a nivel mundial, con la comunidad más grande. Vite tiene inicio de servidor casi instantáneo y compatibilidad total con TypeScript y Tailwind CSS. El documento de Selección de Framework lo evaluó frente a Angular y Vue.js, siendo seleccionado por su comunidad, recursos y compatibilidad con React Native.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Framework frontend móvil — React Native 0.81.5 + Expo SDK 54</h3>
+  <p>Genera una app verdaderamente nativa para Android 13 y 14 sin depender de un navegador, a diferencia de una PWA. Usa el mismo lenguaje y paradigma que React web. El proyecto ya tiene una base de código iniciada en esta tecnología. El documento de Selección de Framework lo evaluó frente a Flutter y Kotlin nativo.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Enrutamiento web — React Router DOM</h3>
+  <p>Es el estándar oficial de enrutamiento para React. Permite crear rutas protegidas que verifican el rol del usuario antes de mostrar cada pantalla.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Enrutamiento móvil — Expo Router ~6.0.23</h3>
+  <p>Permite definir las rutas basándose en la estructura de carpetas del proyecto. Facilita las rutas protegidas y agrupadas por rol: <code>(auth)/</code>, <code>(tabs)/</code> y <code>(admin)/</code>.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Estado global — Zustand</h3>
+  <p>Compatible con React y React Native sin configuración adicional. Permite que ambas plataformas compartan el mismo store para datos como el usuario autenticado y el token JWT.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Peticiones HTTP — Axios</h3>
+  <p>Funciona de forma idéntica en la app web y en la app móvil. Se centraliza en la carpeta <code>services/</code> para no duplicar código entre plataformas.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Caché de datos — @tanstack/react-query v5</h3>
+  <p>Reduce peticiones innecesarias al servidor en pantallas con muchos datos como el catálogo de vehículos y el historial de reservas.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Estilos web — Tailwind CSS</h3>
+  <p>Permite implementar los más de 32 mockups web de Figma de forma rápida con clases utilitarias directamente en los componentes.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Almacenamiento seguro móvil — Expo SecureStore</h3>
+  <p>Reemplaza localStorage, que no existe en React Native nativo. Garantiza que el token JWT no sea accesible por otras aplicaciones del dispositivo Android.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Notificaciones móvil — Expo Notifications</h3>
+  <p>Está integrado con Expo y soporta Android 13 y 14 sin configuración nativa adicional.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Base de datos — PostgreSQL 17 + pgAdmin 4</h3>
+  <p>Soporta transacciones ACID, UUID nativos, tipo JSONB e integración nativa con Spring Data JPA e Hibernate. pgAdmin 4 permite administrarlo visualmente sin usar la terminal.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">ORM — Spring Data JPA + Hibernate</h3>
+  <p>Está integrado en Spring Boot, elimina el SQL manual repetitivo y gestiona las relaciones entre entidades del sistema automáticamente.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Control de versiones — Git 2.40+ y GitHub</h3>
+  <p>Es el estándar de la industria. Permite trabajo en ramas paralelas con la estrategia definida en el proyecto: <strong>feature → dev → qa → staging → main</strong>.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">CI/CD — GitHub Actions</h3>
+  <p>Está integrado en GitHub y soporta Java y Node en el mismo flujo. Ejecuta ESLint y Prettier en cada commit al branch dev, y pruebas de integración con PostgreSQL en contenedor en el branch qa.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pruebas de API — Thunder Client</h3>
+  <p>Es gratuito, funciona dentro de VS Code sin instalar herramientas externas y permite organizar colecciones por módulo con autenticación JWT.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pruebas frontend — Jest + React Testing Library</h3>
+  <p>Está incluido con Expo y React, y se ejecuta automáticamente en el pipeline de GitHub Actions en cada commit.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pruebas backend — JUnit 5 + Mockito</h3>
+  <p>Está incluido en spring-boot-starter-test y se ejecuta con el comando <code>mvn test</code> en el pipeline de CI.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pruebas en dispositivo — Expo Go</h3>
+  <p>Permite escanear un código QR y ver la app funcionando en el dispositivo Android real sin necesidad de generar un APK.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Diseño y modelado — Figma</h3>
+  <p>Contiene los más de 32 mockups web y los más de 32 mockups móviles del proyecto aprobados, organizados por flujos de usuario. Se consulta constantemente durante el desarrollo.</p>
+
+  <!-- 5. RELACIONAR -->
+  <div class="sub-header">
+    <span class="ra-tag">RA2</span>
+    <div><h2>5. Relacionar Herramientas con Actividades de Desarrollo</h2><div class="sub-desc">Correspondencia entre cada actividad del proyecto y las herramientas que la soportan.</div></div>
+  </div>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Actividad de desarrollo</th><th>Herramienta</th></tr>
+      <tr><td>Programación del frontend web</td><td>Visual Studio Code + React 19 + Vite + TypeScript + Tailwind CSS</td></tr>
+      <tr><td>Programación del frontend móvil</td><td>Visual Studio Code + React Native 0.81.5 + Expo SDK 54 + TypeScript</td></tr>
+      <tr><td>Programación del backend y API REST</td><td>Visual Studio Code + Java 21 LTS + Spring Boot 3.x + Maven</td></tr>
+      <tr><td>Navegación entre pantallas web</td><td>React Router DOM</td></tr>
+      <tr><td>Navegación entre pantallas móviles</td><td>Expo Router ~6.0.23</td></tr>
+      <tr><td>Manejo de estado global en web y móvil</td><td>Zustand</td></tr>
+      <tr><td>Comunicación con la API REST</td><td>Axios + @tanstack/react-query v5</td></tr>
+      <tr><td>Estilos de la aplicación web</td><td>Tailwind CSS</td></tr>
+      <tr><td>Gestión de la base de datos</td><td>PostgreSQL 17 + pgAdmin 4 + Spring Data JPA + Hibernate</td></tr>
+      <tr><td>Almacenamiento seguro del token JWT en móvil</td><td>Expo SecureStore</td></tr>
+      <tr><td>Envío de notificaciones push en Android</td><td>Expo Notifications</td></tr>
+      <tr><td>Control de versiones del código</td><td>Git 2.40+ + GitHub</td></tr>
+      <tr><td>Integración y despliegue continuos</td><td>GitHub Actions</td></tr>
+      <tr><td>Pruebas de endpoints REST</td><td>Thunder Client</td></tr>
+      <tr><td>Pruebas unitarias del frontend</td><td>Jest + React Testing Library</td></tr>
+      <tr><td>Pruebas unitarias del backend</td><td>JUnit 5 + Mockito</td></tr>
+      <tr><td>Pruebas en dispositivo Android físico</td><td>Expo Go</td></tr>
+      <tr><td>Consulta del diseño de pantallas</td><td>Figma</td></tr>
+    </table>
+  </div>
+
+  <!-- TABLA RESUMEN -->
+  <div class="sub-header">
+    <span class="ra-tag">RA2</span>
+    <div><h2>Tabla Resumen de Herramientas Seleccionadas</h2><div class="sub-desc">Stack tecnológico completo con función y justificación.</div></div>
+  </div>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Tipo</th><th>Herramienta</th><th>Función</th><th>Justificación</th></tr>
+      <tr><td>IDE</td><td>Visual Studio Code</td><td>Programar el software en TypeScript y Java</td><td>Gratuito, extensible y soporta todo el stack del proyecto desde un solo entorno sin costo de licencias.</td></tr>
+      <tr><td>Lenguaje backend</td><td>Java 21 LTS</td><td>Construir la lógica del backend y la API REST</td><td>Soporte de largo plazo garantizado, ecosistema maduro e integración nativa con Spring Boot, JPA e Hibernate.</td></tr>
+      <tr><td>Lenguaje frontend</td><td>TypeScript con Node.js LTS 22.x</td><td>Construir la lógica del frontend web y móvil</td><td>Detecta errores en tiempo de desarrollo. Ambas plataformas comparten el mismo lenguaje reduciendo la curva de aprendizaje.</td></tr>
+      <tr><td>Framework backend</td><td>Spring Boot 3.x con Maven</td><td>Crear la API REST con seguridad JWT y acceso a base de datos</td><td>Simplifica la configuración del servidor y la seguridad. Maven gestiona todas las dependencias Java.</td></tr>
+      <tr><td>Framework web</td><td>React 19 + Vite</td><td>Construir las más de 32 pantallas web</td><td>El más usado a nivel mundial. Vite tiene inicio instantáneo y compatibilidad total con TypeScript y Tailwind CSS.</td></tr>
+      <tr><td>Framework móvil</td><td>React Native 0.81.5 + Expo SDK 54</td><td>Construir las más de 32 pantallas móviles nativas</td><td>Genera app verdaderamente nativa para Android 13 y 14. Mismo lenguaje que React web.</td></tr>
+      <tr><td>Enrutamiento web</td><td>React Router DOM</td><td>Navegar entre pantallas web protegidas por rol</td><td>Estándar oficial de enrutamiento para React con soporte de rutas protegidas por rol de usuario.</td></tr>
+      <tr><td>Enrutamiento móvil</td><td>Expo Router ~6.0.23</td><td>Navegar entre pantallas móviles protegidas por rol</td><td>Enrutamiento por archivos con rutas agrupadas por rol: (auth)/, (tabs)/, (admin)/.</td></tr>
+      <tr><td>Estado global</td><td>Zustand</td><td>Compartir datos entre pantallas en web y móvil</td><td>Compatible con React y React Native. Permite compartir el mismo store en ambas plataformas.</td></tr>
+      <tr><td>Peticiones HTTP</td><td>Axios</td><td>Comunicar el frontend con la API REST</td><td>Funciona igual en web y móvil. Se centraliza en services/ para no duplicar código entre plataformas.</td></tr>
+      <tr><td>Caché de datos</td><td>@tanstack/react-query v5</td><td>Manejar caché y sincronización de datos del servidor</td><td>Reduce peticiones innecesarias al servidor en pantallas con muchos datos como el catálogo.</td></tr>
+      <tr><td>Estilos web</td><td>Tailwind CSS</td><td>Aplicar el sistema de diseño en la app web</td><td>Permite implementar los mockups de Figma rápidamente con clases utilitarias en los componentes.</td></tr>
+      <tr><td>Almacenamiento móvil</td><td>Expo SecureStore</td><td>Guardar el token JWT de forma segura en Android</td><td>Reemplaza localStorage que no existe en React Native nativo. Protege el token de otras apps.</td></tr>
+      <tr><td>Notificaciones</td><td>Expo Notifications</td><td>Enviar notificaciones push en Android</td><td>Integrado con Expo, soporta Android 13 y 14 sin configuración nativa adicional.</td></tr>
+      <tr><td>Base de datos</td><td>PostgreSQL 17 + pgAdmin 4</td><td>Almacenar toda la información del sistema</td><td>Soporta transacciones ACID, UUID, JSONB e integración nativa con Spring Data JPA e Hibernate.</td></tr>
+      <tr><td>ORM</td><td>Spring Data JPA + Hibernate</td><td>Acceder a la base de datos desde Java</td><td>Integrado en Spring Boot, elimina el SQL manual repetitivo y gestiona relaciones entre entidades.</td></tr>
+      <tr><td>Control de versiones</td><td>Git 2.40+ y GitHub</td><td>Gestionar los cambios del código fuente</td><td>Estándar de la industria con estrategia de ramas feature → dev → qa → staging → main.</td></tr>
+      <tr><td>CI/CD</td><td>GitHub Actions</td><td>Automatizar pruebas y despliegue del código</td><td>Integrado en GitHub, soporta Java y Node en el mismo flujo de trabajo automático.</td></tr>
+      <tr><td>Pruebas de API</td><td>Thunder Client</td><td>Verificar los endpoints del backend Java</td><td>Gratuito, funciona dentro de VS Code, permite colecciones por módulo con autenticación JWT.</td></tr>
+      <tr><td>Pruebas frontend</td><td>Jest + React Testing Library</td><td>Pruebas unitarias de componentes</td><td>Incluido con Expo y React, se ejecuta automáticamente en el pipeline de GitHub Actions.</td></tr>
+      <tr><td>Pruebas backend</td><td>JUnit 5 + Mockito</td><td>Pruebas unitarias e integración del backend Java</td><td>Incluido en spring-boot-starter-test, se ejecuta con mvn test en el pipeline de CI.</td></tr>
+      <tr><td>Pruebas en dispositivo</td><td>Expo Go</td><td>Probar la app móvil en Android físico</td><td>Escaneo de QR sin necesidad de generar APK para ver la app en dispositivo real.</td></tr>
+      <tr><td>Diseño y modelado</td><td>Figma</td><td>Consultar los mockups durante el desarrollo</td><td>Contiene los más de 32 mockups web y móviles aprobados, organizados por flujos de usuario.</td></tr>
+    </table>
+  </div>
+
+  <!-- ANTI-PATRONES -->
+  <div class="sub-header">
+    <span class="ra-tag">RA2</span>
+    <div><h2>Anti-patrones a Evitar</h2><div class="sub-desc">Prácticas incorrectas que el equipo debe evitar durante el desarrollo.</div></div>
+  </div>
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Frontend</h3>
+  <ul class="project-list">
+    <li>No hacer <strong>prop drilling excesivo</strong>: los datos compartidos entre múltiples pantallas van en Zustand.</li>
+    <li>La lógica de negocio y las llamadas a la API no van dentro de los componentes visuales sino en <code>services/</code> y custom hooks.</li>
+    <li>Los estilos de Tailwind CSS son exclusivos de la app web; en la app móvil se usa StyleSheet o NativeWind.</li>
+    <li><strong>localStorage no existe en React Native</strong>; el almacenamiento seguro del token JWT se hace siempre con Expo SecureStore.</li>
+  </ul>
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Backend Java</h3>
+  <ul class="project-list">
+    <li>Nunca construir consultas SQL concatenando datos del usuario; siempre usar los métodos de Spring Data JPA o consultas con parámetros nombrados.</li>
+    <li>Las entidades JPA no se exponen directamente en los endpoints REST; se usan DTOs.</li>
+    <li>La lógica de negocio no va en los controladores sino en la capa de servicios.</li>
+    <li>Contraseñas, URLs y claves secretas nunca se escriben directamente en el código; van en variables de entorno o en <code>application.properties</code> excluido del repositorio.</li>
+  </ul>
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Ambas plataformas</h3>
+  <ul class="project-list">
+    <li>No hacer commits directos a main o staging; todo cambio pasa por pull request con revisión aprobada.</li>
+  </ul>
+
+  <!-- CONCLUSIONES -->
+  <div class="sub-header">
+    <span class="ra-tag">RA2</span>
+    <div><h2>Conclusiones</h2><div class="sub-desc">Síntesis de las decisiones tecnológicas del proyecto.</div></div>
+  </div>
+  <ul class="project-list">
+    <li><strong>Visual Studio Code</strong> centraliza el desarrollo de las más de 32 pantallas web y las más de 32 pantallas móviles en un único entorno gratuito, reduciendo la curva de aprendizaje del equipo.</li>
+    <li><strong>Java 21 LTS con Spring Boot 3.x</strong> es la decisión más importante del backend: ofrece un ecosistema maduro para construir APIs REST seguras con JWT, integración con PostgreSQL mediante JPA e Hibernate, y generación de reportes en PDF, Word y Excel desde el servidor.</li>
+    <li><strong>React Native con Expo SDK 54</strong> garantiza que la app Android sea verdaderamente nativa, con acceso a las funcionalidades del dispositivo y una experiencia fluida en Android 13 y 14. Expo Router organiza de forma clara las más de 32 pantallas móviles agrupadas por rol de usuario.</li>
+    <li><strong>React con Vite</strong> es la solución más eficiente para implementar las más de 32 pantallas web con componentes reutilizables, estilos con Tailwind CSS y enrutamiento protegido por rol.</li>
+    <li><strong>PostgreSQL 17 con Spring Data JPA e Hibernate</strong> es la combinación correcta para gestionar todas las entidades del sistema con transacciones ACID garantizadas, especialmente en el módulo de pagos.</li>
+    <li>La estrategia <strong>feature → dev → qa → staging → main con GitHub Actions</strong> asegura que tanto el frontend como el backend Java pasen verificación automática de calidad antes de avanzar a producción.</li>
+    <li>Con todas las herramientas instaladas, configuradas y verificadas, el entorno de desarrollo de Renta Movil Location está listo para iniciar la construcción del software.</li>
+  </ul>
+
+  <div class="ok-box" style="margin-top:1.5rem;">
+    Documento elaborado para el programa Tecnólogo en Análisis y Desarrollo de Software — SENA, Ficha 3145555 — 2026
+  </div>
+
+</div>
+
+<!-- ══════════════════════════════════════════
+     RA3
+══════════════════════════════════════════ -->
+<div class="ra-section" id="sec-ra3">
+  <div class="ra-chip">RA3 — Resultado de Aprendizaje</div>
+  <div class="ra-h1">Configuración de Herramientas de Desarrollo</div>
+  <div class="ra-h1-sub">Instalación y configuración de todas las herramientas necesarias para construir el proyecto Renta Movil Location.</div>
+
+  <div style="margin: 0.8rem 0 1.2rem; text-align: center;">
+    <a href="https://drive.google.com/file/d/1Ul-rDMpxJFIYBYX0KyjM8ZB7x9Ewcc3v/view?usp=sharing"
+       target="_blank"
+       style="display:inline-flex;align-items:center;gap:0.5rem;background:#2E75B6;color:#fff;padding:0.55rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:600;">
+      📄 Ver documento completo en Drive
+    </a>
+  </div>
+
+  <div class="sub-header">
+    <span class="ra-tag">RA3</span>
+    <div><h2>Datos del documento</h2><div class="sub-desc">Integrantes, instructor e institución.</div></div>
+  </div>
+  <div class="feat-grid spaced-grid">
+    <div class="feat-card"><div class="feat-card-title">Integrantes</div><div class="feat-card-body">Laura Vanessa Perez Perdomo · Danna Valentina Barrios Penagos · Emily Sharith Amezquita Saavedra</div></div>
+    <div class="feat-card"><div class="feat-card-title">Instructor</div><div class="feat-card-body">José de Jesús Motta Vargas</div></div>
+    <div class="feat-card"><div class="feat-card-title">Programa</div><div class="feat-card-body">Tecnólogo en Análisis y Desarrollo de Software · Ficha: 3145555</div></div>
+    <div class="feat-card"><div class="feat-card-title">Institución</div><div class="feat-card-body">SENA — Sede Industrial, Centro de la Industria, la Empresa y los Servicios · Neiva-Huila · 2026</div></div>
+  </div>
+
+  <!-- PREGUNTA 1 -->
+  <div class="sub-header">
+    <span class="ra-tag">RA3</span>
+    <div><h2>Pregunta 1</h2><div class="sub-desc">¿Cuáles son las características específicas de cada herramienta que se va a utilizar para el desarrollo del proyecto y su entorno?</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Visual Studio Code</h3>
+  <p>Editor de código fuente gratuito y de código abierto desarrollado por Microsoft. Es multiplataforma, funciona en Windows, macOS y Linux. Tiene autocompletado inteligente (IntelliSense), depurador integrado, terminal integrada, control de versiones Git integrado y un sistema de extensiones que permite agregar soporte para cualquier lenguaje o tecnología. Es liviano, rápido y altamente personalizable. Para el proyecto Renta Movil Location es el entorno principal de desarrollo porque desde un solo editor se trabaja TypeScript, React, React Native, Expo, Java y PostgreSQL sin costo de licencias.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Java 21 LTS</h3>
+  <p>Versión de Java con soporte de largo plazo más reciente, con estabilidad garantizada por al menos 8 años. Es un lenguaje orientado a objetos, compilado, fuertemente tipado y multiplataforma gracias a la JVM (Java Virtual Machine). Es el lenguaje del backend del proyecto, usado con Spring Boot 3.x para construir la API REST, gestionar autenticación JWT, acceder a PostgreSQL 17 mediante Spring Data JPA e Hibernate y generar reportes en PDF, Word y Excel.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Node.js LTS 22.x</h3>
+  <p>Entorno de ejecución de JavaScript fuera del navegador. Es necesario para ejecutar Vite (aplicación web) y Expo CLI (aplicación móvil). Incluye npm como gestor de paquetes. Sin Node.js no es posible instalar ni ejecutar ninguna de las herramientas del frontend del proyecto.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">TypeScript</h3>
+  <p>Lenguaje principal del frontend del proyecto en ambas plataformas, web y móvil. Agrega tipado estático a JavaScript, detecta errores antes de ejecutar el código y mejora el autocompletado en el editor. Es el estándar definido en el diseño del sistema para todo el código del frontend.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Spring Boot 3.x</h3>
+  <p>Framework de Java para construir la API REST del proyecto. Simplifica la configuración del servidor, los endpoints HTTP, la autenticación JWT con Spring Security, el acceso a PostgreSQL con Spring Data JPA e Hibernate y la generación de reportes. Usa Maven como gestor de dependencias mediante el archivo pom.xml. Incluye JUnit 5 y Mockito para pruebas automatizadas del backend.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">React 19 + Vite</h3>
+  <p>React 19 es la librería de interfaces de usuario más usada del mundo. Permite construir componentes reutilizables para las más de 32 pantallas web del proyecto como tarjetas de vehículo, formularios, tablas, modales y calendarios. Vite es el empaquetador más rápido disponible, con servidor de desarrollo de inicio casi instantáneo y compatibilidad total con TypeScript y Tailwind CSS. React Router DOM gestiona la navegación entre pantallas protegida por rol de usuario.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">React Native 0.81.5 + Expo SDK 54</h3>
+  <p>React Native genera una aplicación verdaderamente nativa para Android 13 y 14 que se instala directamente en el dispositivo sin depender de un navegador. Expo SDK 54 simplifica el acceso a funcionalidades nativas como notificaciones push y almacenamiento seguro del token JWT. Expo Router gestiona la navegación entre las más de 32 pantallas móviles mediante rutas por archivos agrupadas por rol. Expo Go permite probar la aplicación en un dispositivo Android físico escaneando un código QR sin necesidad de generar un APK.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">PostgreSQL 17 + pgAdmin 4</h3>
+  <p>Motor de base de datos relacional de código abierto más avanzado disponible. Soporta transacciones ACID completas, crítico para el módulo de pagos del proyecto. Soporta UUID nativos para identificadores de reservas y contratos, tipo JSONB para configuraciones y reportes, integridad referencial y cifrado de datos. Es completamente compatible con Spring Data JPA e Hibernate. pgAdmin 4 es la herramienta gráfica oficial para administrar PostgreSQL desde una interfaz visual sin necesidad de usar la terminal.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Git 2.40+ y GitHub</h3>
+  <p>Git es el sistema de control de versiones distribuido más usado en el mundo. Permite registrar el historial completo de cambios del código, trabajar en ramas paralelas sin afectar el código principal y revertir errores. GitHub es la plataforma de repositorios remotos donde se aloja el código del proyecto. El proyecto usa la estrategia de ramas <strong>feature/nombre → dev → qa → staging → main</strong> con GitHub Actions para integración y despliegue continuos automatizados.</p>
+
+  <!-- PREGUNTA 2 -->
+  <div class="sub-header">
+    <span class="ra-tag">RA3</span>
+    <div><h2>Pregunta 2</h2><div class="sub-desc">¿Cómo se instala y configura cada herramienta? Explique los procedimientos en cada caso.</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Visual Studio Code — Instalación</h3>
+  <ol class="project-list">
+    <li>Ir a <strong>https://code.visualstudio.com</strong></li>
+    <li>Descargar el instalador según el sistema operativo: Windows (.exe), macOS (.dmg) o Linux (.deb).</li>
+    <li>Ejecutar el instalador.</li>
+    <li>En Windows marcar la opción <strong>"Agregar al PATH"</strong>.</li>
+    <li>Finalizar e iniciar Visual Studio Code.</li>
+  </ol>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Visual Studio Code — Configuración (tema, formato de código, autoguardado)</h3>
+  <p>Ir a <strong>File &gt; Preferences &gt; Settings</strong> y aplicar:</p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Ajuste</th><th>Valor</th></tr>
+      <tr><td>Color Theme</td><td>Default Dark+</td></tr>
+      <tr><td>Editor: Format On Save</td><td>Activado</td></tr>
+      <tr><td>Editor: Default Formatter</td><td>Prettier - Code formatter</td></tr>
+      <tr><td>Editor: Tab Size</td><td>2</td></tr>
+      <tr><td>Editor: Font Size</td><td>14</td></tr>
+      <tr><td>Files: Auto Save</td><td>afterDelay</td></tr>
+      <tr><td>Files: Auto Save Delay</td><td>1000</td></tr>
+    </table>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Visual Studio Code — Extensiones a instalar (Ctrl+Shift+X)</h3>
+  <ul class="project-list">
+    <li>ES7+ React/Redux/React-Native snippets</li>
+    <li>Prettier - Code formatter</li>
+    <li>ESLint</li>
+    <li>Tailwind CSS IntelliSense</li>
+    <li>GitLens</li>
+    <li>Thunder Client</li>
+    <li>Expo Tools</li>
+    <li>React Native Tools</li>
+    <li>Extension Pack for Java</li>
+    <li>Spring Boot Extension Pack</li>
+    <li>PostgreSQL (Chris Kolkman)</li>
+    <li>DotENV</li>
+  </ul>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Java 21 LTS — Instalación</h3>
+  <ol class="project-list">
+    <li>Ir a <strong>https://adoptium.net</strong></li>
+    <li>Seleccionar <strong>Eclipse Temurin 21 (LTS)</strong> para el sistema operativo.</li>
+    <li>Ejecutar el instalador y marcar <strong>"Set JAVA_HOME variable"</strong> y <strong>"Add to PATH"</strong>.</li>
+    <li>Finalizar la instalación.</li>
+  </ol>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Java 21 LTS — Verificar versión instalada</h3>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">java -version
+Resultado esperado: openjdk version "21.x.x"</pre>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Java 21 LTS — Programa de prueba Hola Mundo</h3>
+  <p>Crear el archivo <code>HolaMundo.java</code>:</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">public class HolaMundo {
+  public static void main(String[] args) {
+    System.out.println("Hola Mundo desde Java 21");
+  }
+}</pre>
+  <p>Compilar y ejecutar:</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">javac HolaMundo.java
+java HolaMundo
+Salida esperada: Hola Mundo desde Java 21</pre>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Node.js LTS 22.x — Instalación</h3>
+  <ol class="project-list">
+    <li>Ir a <strong>https://nodejs.org</strong></li>
+    <li>Descargar la versión <strong>LTS (22.x)</strong>.</li>
+    <li>Ejecutar el instalador con todas las opciones por defecto.</li>
+    <li>Finalizar la instalación.</li>
+  </ol>
+  <p>Verificar versión instalada:</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">node --version
+npm --version
+Resultado esperado: v22.x.x / 10.x.x</pre>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">TypeScript — Instalación</h3>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">npm install -g typescript</pre>
+  <p>Verificar versión instalada:</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">tsc --version
+Resultado esperado: Version 5.x.x</pre>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">TypeScript — Programa de prueba Hola Mundo</h3>
+  <p>Crear el archivo <code>holaMundo.ts</code>:</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">const mensaje: string = "Hola Mundo desde TypeScript";
+console.log(mensaje);</pre>
+  <p>Compilar y ejecutar:</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">tsc holaMundo.ts
+node holaMundo.js
+Salida esperada: Hola Mundo desde TypeScript</pre>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Spring Boot 3.x — Instalación y configuración</h3>
+  <ol class="project-list">
+    <li>Ir a <strong>https://start.spring.io</strong></li>
+    <li>Configurar: Project Maven, Language Java, Spring Boot 3.x, Java 21.</li>
+    <li>Agregar dependencias: Spring Web, Spring Security, Spring Data JPA, PostgreSQL Driver, Validation, Lombok, Spring Boot DevTools.</li>
+    <li>Clic en <strong>Generate</strong>, descomprimir y abrir en Visual Studio Code.</li>
+  </ol>
+  <p>Configurar el archivo <code>application.properties</code>:</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">spring.datasource.url=jdbc:postgresql://localhost:5432/renta_movil_db
+spring.datasource.username=postgres
+spring.datasource.password=tu_contraseña
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true</pre>
+  <p>Verificar que funciona:</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">./mvnw spring-boot:run
+Resultado esperado: servidor iniciado en el puerto 8080 sin errores.</pre>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">React 19 + Vite — Instalación y configuración</h3>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">npm create vite@latest renta-movil-web --template react-ts
+cd renta-movil-web
+npm install
+npm install react-router-dom axios zustand @tanstack/react-query tailwindcss @tailwindcss/vite</pre>
+  <p>Crear el archivo <code>.env.development</code>:</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">VITE_API_URL=http://localhost:8080/api</pre>
+  <p>Verificar que funciona:</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">npm run dev
+Abrir http://localhost:5173 en el navegador.
+Resultado esperado: pantalla de inicio de Vite + React sin errores.</pre>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">React Native 0.81.5 + Expo SDK 54 — Instalación y configuración</h3>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">npm install -g expo-cli
+npx create-expo-app renta-movil-app --template blank-typescript
+cd renta-movil-app
+npm install zustand axios @tanstack/react-query expo-secure-store expo-notifications expo-router</pre>
+  <p>Crear el archivo <code>.env.development</code>:</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">EXPO_PUBLIC_API_URL=http://localhost:8080/api</pre>
+  <p>Verificar que funciona:</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">npx expo start
+Instalar Expo Go en el dispositivo Android y escanear el código QR.
+Resultado esperado: la aplicación abre en el dispositivo sin errores.</pre>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">PostgreSQL 17 + pgAdmin 4 — Instalación</h3>
+  <ol class="project-list">
+    <li>Ir a <strong>https://www.postgresql.org/download</strong></li>
+    <li>Descargar el instalador para el sistema operativo.</li>
+    <li>Ejecutar el instalador. Definir puerto <strong>5432</strong> y contraseña del superusuario <strong>postgres</strong>.</li>
+    <li>Dejar marcada la opción de instalar <strong>pgAdmin 4</strong>.</li>
+    <li>Finalizar la instalación.</li>
+  </ol>
+  <p>Verificar versión instalada:</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">psql --version
+Resultado esperado: psql (PostgreSQL) 17.x</pre>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">PostgreSQL — Crear base de datos de prueba</h3>
+  <p>Abrir pgAdmin 4, conectarse al servidor local, clic derecho en <strong>Databases &gt; Create &gt; Database</strong>, escribir <code>renta_movil_db</code> y guardar. O desde la terminal:</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">psql -U postgres
+CREATE DATABASE renta_movil_db;
+\c renta_movil_db</pre>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">PostgreSQL — Crear tabla de prueba</h3>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+CREATE TABLE IF NOT EXISTS usuarios (
+  id        UUID         PRIMARY KEY DEFAULT uuid_generate_v4(),
+  nombre    VARCHAR(100) NOT NULL,
+  correo    VARCHAR(150) NOT NULL UNIQUE,
+  rol       VARCHAR(20)  NOT NULL DEFAULT 'cliente'
+            CHECK (rol IN ('cliente','administrador','operador','supervisor')),
+  activo    BOOLEAN      NOT NULL DEFAULT TRUE,
+  creado_en TIMESTAMP    NOT NULL DEFAULT NOW()
+);</pre>
+  <p>Verificar que la tabla se creó:</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">SELECT * FROM usuarios;
+Resultado esperado: tabla vacía con las columnas id, nombre, correo, rol, activo y creado_en.</pre>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Git 2.40+ — Instalación</h3>
+  <ol class="project-list">
+    <li>Ir a <strong>https://git-scm.com/downloads</strong></li>
+    <li>Descargar el instalador para el sistema operativo.</li>
+    <li>Ejecutar con opciones por defecto. En Windows marcar <strong>"Git from the command line and also from 3rd-party software"</strong>.</li>
+    <li>Finalizar la instalación.</li>
+  </ol>
+  <p>Verificar versión instalada:</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">git --version
+Resultado esperado: git version 2.40.x</pre>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Git — Configuración inicial</h3>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">git config --global user.name "Nombre Apellido"
+git config --global user.email "correo@ejemplo.com"
+git config --global core.editor "code --wait"</pre>
+  <p>Verificar:</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">git config --list</pre>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     RA4
+══════════════════════════════════════════ -->
+<div class="ra-section" id="sec-ra4">
+  <div class="ra-chip">RA4 — Resultado de Aprendizaje</div>
+  <div class="ra-h1">Codificación de la Solución</div>
+  <div class="ra-h1-sub">Planear actividades de construcción del software de acuerdo con el diseño establecido — Cuestionario de comprensión, planeación y calidad.</div>
+
+  <div style="margin: 0.8rem 0 1.2rem; text-align: center;">
+    <a href="https://drive.google.com/file/d/1-UMrKAyJXYohKLKvewgFuFKR5VH8_128/view?usp=sharing"
+       target="_blank"
+       style="display:inline-flex;align-items:center;gap:0.5rem;background:#2E75B6;color:#fff;padding:0.55rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:600;">
+      📄 Ver documento completo en Drive
+    </a>
+  </div>
+
+  <div class="sub-header">
+    <span class="ra-tag">RA4</span>
+    <div><h2>Datos del documento</h2><div class="sub-desc">Integrantes, instructor e institución.</div></div>
+  </div>
+  <div class="feat-grid spaced-grid">
+    <div class="feat-card"><div class="feat-card-title">Integrantes</div><div class="feat-card-body">Laura Vanessa Perez Perdomo · Danna Valentina Barrios Penagos · Emily Sharith Amezquita Saavedra</div></div>
+    <div class="feat-card"><div class="feat-card-title">Instructor</div><div class="feat-card-body">Motta Vargas José de Jesús</div></div>
+    <div class="feat-card"><div class="feat-card-title">Programa</div><div class="feat-card-body">Tecnólogo en Análisis y Desarrollo de Software · Ficha: 3145555</div></div>
+    <div class="feat-card"><div class="feat-card-title">Institución</div><div class="feat-card-body">SENA — Sede Industrial, Centro de la Industria, la Empresa y los Servicios · Neiva-Huila · 2026</div></div>
+  </div>
+
+  <!-- 1. COMPRENSIÓN DEL DISEÑO -->
+  <div class="sub-header">
+    <span class="ra-tag">RA4</span>
+    <div><h2>1. Comprensión del Diseño</h2><div class="sub-desc">Interpretación de diagramas, elementos indispensables y riesgos del diseño.</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 1: ¿Cómo interpreta los diagramas del diseño (UML, arquitectura) para iniciar la construcción del software?</h3>
+  <p>Para el proyecto Renta Móvil, interpretamos los diagramas UML de casos de uso identificando los actores principales definidos en el SRS: cliente, administrador, operador, supervisor e invitado. Cada caso de uso (22 en total, desde 'Registrarse' hasta 'Generar tokens / API') nos indica qué funcionalidad debe construirse y quién la usa.</p>
+  <p>El diagrama de arquitectura N capas nos orienta sobre cómo separar: la capa de presentación (PWA para Android 13/14 y navegadores Chrome 146 y Firefox 134), la capa de lógica de negocio (API REST con control de versiones v1, v2) y la capa de datos (base de datos relacional). Esta separación guía el inicio de la construcción de cada módulo de forma independiente.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 2: ¿Qué elementos del diseño son indispensables antes de comenzar a programar?</h3>
+  <p>Antes de programar Renta Móvil es indispensable contar con:</p>
+  <ul class="project-list">
+    <li>Los 71 requerimientos funcionales distribuidos en los 10 módulos definidos en el SRS (Gestión de Usuarios, Gestión de Vehículos, Auditoría y Comunicación, Gestión del Perfil, Atención y Reportes, Administración del Sistema, Validaciones y Calificaciones, API REST, Aplicación Móvil, y Seguridad y Personalización).</li>
+    <li>Los 11 requerimientos no funcionales: rendimiento (máx. 3 segundos de respuesta), compatibilidad con Android 13/14 y Chrome 146/Firefox 134, seguridad OWASP Top 10, autenticación JWT con roles, accesibilidad WCAG 2.1 nivel AA y disponibilidad mínima del 99,5%.</li>
+    <li>Los bosquejos de interfaz en Figma para web y móvil, que muestran la distribución de pantallas por sesión (autenticación, catálogo, reserva, pagos, soporte, panel administrativo, etc.).</li>
+    <li>La definición de la pasarela de pagos Wompi (PSE, tarjetas crédito/débito, Nequi) con integración vía webhook.</li>
+    <li>La arquitectura de base de datos relacional y los endpoints REST documentados.</li>
+  </ul>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 3: ¿Cómo identifica los módulos o componentes del sistema a partir del diseño?</h3>
+  <p>El SRS de Renta Móvil organiza los componentes en 10 módulos claramente diferenciados. Los identificamos agrupando los requerimientos funcionales por área de responsabilidad:</p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Módulo</th><th>RFs</th><th>Descripción</th></tr>
+      <tr><td><strong>Módulo 1</strong></td><td>RF1–RF5</td><td>Gestión de Usuarios – registro, inicio de sesión, acceso como invitado.</td></tr>
+      <tr><td><strong>Módulo 2</strong></td><td>RF6–RF14</td><td>Gestión de Vehículos – registro, categorías, sucursales, flotas, reservas, contratos, pagos y servicios adicionales.</td></tr>
+      <tr><td><strong>Módulo 3</strong></td><td>RF15–RF18</td><td>Auditoría y Comunicación – registros de auditoría, notificaciones por correo.</td></tr>
+      <tr><td><strong>Módulo 4</strong></td><td>RF19–RF21</td><td>Gestión del Perfil – editar información, cambiar contraseña, eliminar cuenta.</td></tr>
+      <tr><td><strong>Módulo 5</strong></td><td>RF22–RF26</td><td>Atención y Reportes – quejas, atención al cliente, reportes de usuario y administrador, mantenimiento de vehículos.</td></tr>
+      <tr><td><strong>Módulo 6</strong></td><td>RF27–RF31</td><td>Administración del Sistema – gestión administrativa, cambio de idioma, panel de administrador, mantenimiento vehicular interno.</td></tr>
+      <tr><td><strong>Módulo 7</strong></td><td>RF32–RF35</td><td>Validaciones y Calificaciones – validación de licencia, calificación del servicio, API REST general.</td></tr>
+      <tr><td><strong>Módulo 8</strong></td><td>RF36–RF41</td><td>API REST Operaciones – endpoints de vehículos, reservas, pagos, reportes y personalización.</td></tr>
+      <tr><td><strong>Módulo 9</strong></td><td>RF42–RF66</td><td>Aplicación Móvil – réplica funcional para Android.</td></tr>
+      <tr><td><strong>Módulo 10</strong></td><td>RF67–RF71</td><td>Seguridad y Personalización – perfil móvil, sincronización, 2FA, JWT, temas.</td></tr>
+    </table>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 4: ¿Qué riesgos existen si se inicia la construcción sin un diseño completo?</h3>
+  <p>Para Renta Móvil, iniciar sin el diseño completo implica riesgos concretos sobre el proyecto:</p>
+  <ul class="project-list">
+    <li><strong>Desarrollar funcionalidades desconectadas:</strong> por ejemplo, construir el módulo de reservas (RF11) sin tener definida la integración con Wompi (RF13, RF38) llevaría a reprogramar el flujo de pago completo.</li>
+    <li><strong>Incumplir los requerimientos no funcionales:</strong> si no se planea desde el inicio la autenticación JWT con roles (cliente, administrador, operador, supervisor) definida en el RNF4, habría que refactorizar toda la capa de seguridad.</li>
+    <li><strong>Errores en la arquitectura N capas:</strong> sin el diseño de la API REST con versionamiento (v1, v2) definido en RF34, los módulos de web y móvil podrían comunicarse de formas incompatibles.</li>
+    <li><strong>Incumplimiento de WCAG 2.1 nivel AA (RNF10):</strong> si la accesibilidad no se diseña desde el inicio, adaptarla después implica revisar toda la interfaz.</li>
+    <li><strong>Conflictos de disponibilidad:</strong> sin el diseño de flotas y sucursales (RF8, RF9) definido, el módulo de reservas no podría validar correctamente la disponibilidad de vehículos en tiempo real.</li>
+  </ul>
+
+  <!-- 2. PLANEACIÓN -->
+  <div class="sub-header">
+    <span class="ra-tag">RA4</span>
+    <div><h2>2. Planeación de Actividades</h2><div class="sub-desc">Pasos, fases, criterios de priorización y estimación de tiempos.</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 5: ¿Qué pasos seguiría para planear las actividades de construcción del software?</h3>
+  <p>Para Renta Móvil, los pasos de planeación serían:</p>
+  <ul class="project-list">
+    <li>Revisar el SRS completo identificando los 10 módulos, los 71 requerimientos funcionales y los 11 no funcionales.</li>
+    <li>Priorizar módulos según dependencias: el módulo de autenticación (RF1–RF5) debe construirse primero porque todos los demás módulos dependen del sistema de roles JWT.</li>
+    <li>Definir el orden de construcción respetando las dependencias: primero la base de datos relacional y la API REST, luego los módulos de negocio (vehículos, reservas, pagos) y finalmente los módulos de reportes y personalización.</li>
+    <li>Asignar tareas entre los integrantes del equipo diferenciando responsabilidades de frontend (PWA/web) y backend (API REST, base de datos).</li>
+    <li>Establecer hitos de entrega alineados con los 22 casos de uso definidos en el SRS.</li>
+    <li>Planificar las pruebas por módulo considerando los criterios de aceptación de cada requerimiento funcional.</li>
+  </ul>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 6: ¿Cómo organizaría las tareas de desarrollo en fases o iteraciones?</h3>
+  <p>Organizaríamos el desarrollo de RentaMovil en cuatro fases:</p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Fase</th><th>Contenido</th></tr>
+      <tr><td><strong>Fase 1 — Fundamentos</strong></td><td>Configuración de la base de datos relacional, API REST con autenticación JWT (RF70), módulo de registro e inicio de sesión (RF1–RF4) y estructura de roles (cliente, administrador, operador, supervisor).</td></tr>
+      <tr><td><strong>Fase 2 — Núcleo del negocio</strong></td><td>Módulo de vehículos (RF6–RF10), gestión de sucursales y flotas (RF8, RF9), proceso de reserva (RF11–RF13), contrato digital (RF12) e integración con Wompi (RF13, RF38).</td></tr>
+      <tr><td><strong>Fase 3 — Funcionalidades complementarias</strong></td><td>Validación de licencia (RF32), calificaciones (RF33), buzón de quejas (RF22), reportes de usuario (RF24) y de administrador (RF25), mantenimiento de vehículos (RF26, RF30), panel administrativo (RF29) y auditoría (RF15, RF16).</td></tr>
+      <tr><td><strong>Fase 4 — Aplicación móvil y ajustes finales</strong></td><td>Módulo 9 completo (RF42–RF66) para Android 13/14 mediante PWA, personalización de temas (RF71), cambio de idioma (RF28), ajuste de accesibilidad WCAG 2.1 AA (RNF10) y pruebas de rendimiento (RNF1, máx. 3 segundos).</td></tr>
+    </table>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 7: ¿Qué criterios utilizaría para priorizar los módulos a desarrollar?</h3>
+  <p>Los criterios de priorización para Renta Móvil son:</p>
+  <ul class="project-list">
+    <li><strong>Dependencia funcional:</strong> el módulo de autenticación (RF1–RF5) y la API REST base (RF34, RF35) son pre-requisitos de todos los demás módulos.</li>
+    <li><strong>Impacto en el flujo principal:</strong> los módulos de reserva (RF11), contrato (RF12), pago (RF13) y vehículos (RF6–RF10) representan el flujo central del negocio y tienen prioridad alta según el SRS.</li>
+    <li><strong>Seguridad:</strong> la autenticación JWT con roles y el cumplimiento OWASP Top 10 (RNF4) deben implementarse desde el inicio porque protegen todos los endpoints.</li>
+    <li><strong>Validaciones previas al uso:</strong> la validación de licencia (RF32) es prerrequisito para que el cliente pueda reservar, por lo tanto se prioriza antes que la calificación o los reportes.</li>
+    <li><strong>Prioridad declarada en el SRS:</strong> los casos de uso marcados como prioridad 'Alta' (registrarse, iniciar sesión, buscar vehículo, reservar, firmar contrato, pagar, gestionar vehículos, etc.) se desarrollan antes que los de prioridad 'Media' o 'Baja'.</li>
+  </ul>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 8: ¿Cómo estimaría el tiempo requerido para cada actividad de desarrollo?</h3>
+  <p>Para estimar el tiempo en Renta Móvil consideraríamos:</p>
+  <ul class="project-list">
+    <li><strong>La complejidad de cada requerimiento:</strong> requerimientos con múltiples subcomponentes como RF11 (16 sub-requerimientos de reserva) o RF25 (5 tipos de reportes del administrador) requieren más tiempo que requerimientos simples como RF65 (3 sub-requerimientos de personalización).</li>
+    <li><strong>Las integraciones externas:</strong> la integración con Wompi mediante webhooks (RF13, RF38, RF48, RF63) requiere tiempo adicional para pruebas de transacción y validación de estados de pago.</li>
+    <li><strong>Los criterios de aceptación del SRS:</strong> cada requerimiento funcional tiene criterios específicos que deben cumplirse; a mayor número de criterios, mayor tiempo de desarrollo y prueba.</li>
+    <li><strong>La compatibilidad multiplataforma:</strong> dado que el SRS requiere que el sistema funcione en web (Chrome 146/Firefox 134) y móvil (Android 13/14 mediante PWA), cada módulo requiere tiempo adicional para pruebas en ambos entornos.</li>
+    <li><strong>Los requerimientos no funcionales:</strong> garantizar tiempos de respuesta máximos de 3 segundos (RNF1) y disponibilidad del 99,5% (RNF6) implica tiempo de optimización y configuración de servidor.</li>
+  </ul>
+
+  <!-- 3. ASIGNACIÓN DE RECURSOS -->
+  <div class="sub-header">
+    <span class="ra-tag">RA4</span>
+    <div><h2>3. Asignación de Recursos</h2><div class="sub-desc">Roles del equipo, herramientas seleccionadas y comprensión del diseño.</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 9: ¿Cómo definiría los roles del equipo de desarrollo durante la construcción del software?</h3>
+  <p>El SRS de Renta Móvil identifica dos integrantes del equipo, ambas con rol de Analista:</p>
+  <ul class="project-list">
+    <li><strong>Laura Vanessa Pérez Perdomo:</strong> responsable de análisis de información, diseño y programación. En la construcción se enfocaría en el desarrollo del frontend web (PWA, interfaces responsivas para Chrome 146 y Firefox 134) y los módulos de usuario (autenticación, perfil, reservas, pagos desde el cliente).</li>
+    <li><strong>Danna Valentina Barrios Penagos:</strong> responsable de análisis de información, diseño y programación. En la construcción se enfocaría en el backend (API REST, base de datos relacional, módulos de administración, auditoría, mantenimiento vehicular) y la integración con Wompi.</li>
+  </ul>
+  <p>Ambas integrantes comparten responsabilidades en pruebas, integración de módulos y validación de los criterios de aceptación definidos en el SRS.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 10: ¿Qué herramientas de desarrollo seleccionaría y por qué?</h3>
+  <p>Las herramientas se seleccionan en coherencia con las definiciones del SRS de Renta Móvil:</p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Herramienta / Estándar</th><th>Justificación en el SRS</th></tr>
+      <tr><td><strong>Arquitectura N capas con API REST</strong></td><td>El SRS define explícitamente esta arquitectura para separar presentación, lógica de negocio y acceso a datos.</td></tr>
+      <tr><td><strong>Base de datos relacional</strong></td><td>Requerida por el SRS (sección 3.1.3) para garantizar integridad y seguridad de la información.</td></tr>
+      <tr><td><strong>PWA (Progressive Web App)</strong></td><td>Definida en el SRS para compatibilidad con Android 13 y 14 sin desarrollo de aplicación nativa para iOS.</td></tr>
+      <tr><td><strong>JWT (JSON Web Token – RFC 7519)</strong></td><td>Requerido por el SRS para autenticación con roles diferenciados (RF35, RF64, RF70).</td></tr>
+      <tr><td><strong>SSL/TLS (RFC 8446)</strong></td><td>Definido en el SRS para cifrado de comunicaciones (sección 3.1.4).</td></tr>
+      <tr><td><strong>Wompi</strong></td><td>Pasarela de pagos seleccionada en el SRS para procesar PSE, tarjetas crédito/débito y Nequi (RF13, RF38).</td></tr>
+      <tr><td><strong>Figma</strong></td><td>Herramienta de diseño ya utilizada en el proyecto; bosquejos web y móvil referenciados en la sección 3.3 del SRS.</td></tr>
+      <tr><td><strong>Reportes Word, PDF y Excel</strong></td><td>Requerida en múltiples módulos (RF25, RF39).</td></tr>
+    </table>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 11: ¿Cómo aseguraría que todos los miembros del equipo comprendan el diseño del sistema?</h3>
+  <p>Para garantizar que todas las integrantes comprendan el diseño de Renta Móvil:</p>
+  <ul class="project-list">
+    <li><strong>Revisión conjunta del SRS:</strong> dado que el documento tiene 10 módulos y 71 requerimientos funcionales, se haría una lectura compartida para alinear la comprensión de cada módulo, sus entradas, salidas y criterios de aceptación.</li>
+    <li><strong>Revisión de los bosquejos Figma:</strong> los mockups web y móvil sirven como referencia visual compartida para que todas las integrantes conozcan el flujo esperado de cada pantalla.</li>
+    <li><strong>Revisión de los 22 casos de uso:</strong> cada caso de uso define la secuencia normal y los flujos alternos, lo que facilita la comprensión del comportamiento esperado del sistema.</li>
+    <li><strong>Acuerdo sobre las interfaces de la API REST:</strong> documentar los endpoints (RF34, RF59) antes de la construcción para que el frontend y el backend sean compatibles.</li>
+    <li><strong>Validación cruzada:</strong> cada integrante revisa el trabajo de la otra comparando contra los criterios de aceptación del SRS.</li>
+  </ul>
+
+  <!-- 4. BUENAS PRÁCTICAS -->
+  <div class="sub-header">
+    <span class="ra-tag">RA4</span>
+    <div><h2>4. Buenas Prácticas y Calidad</h2><div class="sub-desc">Prácticas de programación, aseguramiento de calidad y estándares de codificación.</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 12: ¿Qué buenas prácticas de programación considera necesarias en la fase de construcción?</h3>
+  <p>Para Renta Móvil, las buenas prácticas necesarias son:</p>
+  <ul class="project-list">
+    <li><strong>Cumplimiento de OWASP Top 10 (RNF4):</strong> proteger todos los endpoints contra las vulnerabilidades más comunes (inyección SQL, exposición de datos sensibles, autenticación rota, etc.).</li>
+    <li><strong>Cifrado de contraseñas antes de almacenarlas (RF1.10, RF42.10):</strong> según los criterios de aceptación del SRS, ninguna contraseña debe guardarse en texto plano.</li>
+    <li><strong>Validación en tiempo real de formularios (RF1.9, RF2.6):</strong> mensajes de error claros para cada campo según lo definido en los criterios de aceptación.</li>
+    <li><strong>Uso de tokens JWT con expiración de 60 minutos y refresh tokens (RF70):</strong> según el RNF4 y RF70 del SRS.</li>
+    <li><strong>Registro de auditoría en todas las operaciones críticas (RF15):</strong> el SRS exige que ningún evento crítico se ejecute sin generar su auditoría.</li>
+    <li><strong>Cifrado de datos sensibles:</strong> VIN, pólizas y datos bancarios deben almacenarse encriptados según RF6.11 y RNF4.</li>
+    <li><strong>Separación de responsabilidades por capas:</strong> respetando la arquitectura N capas definida en el SRS.</li>
+  </ul>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 13: ¿Cómo integraría actividades de aseguramiento de calidad durante la construcción?</h3>
+  <p>El aseguramiento de calidad en Renta Móvil se integra desde los propios criterios de aceptación del SRS:</p>
+  <ul class="project-list">
+    <li>Validar cada requerimiento funcional contra sus criterios de aceptación definidos en el SRS antes de dar por terminado el módulo. Por ejemplo, RF1 exige que la contraseña cumpla mínimo 8 caracteres, una mayúscula, una minúscula, un número y un símbolo.</li>
+    <li>Verificar los tiempos de respuesta: el RNF1 exige que el sistema responda en menos de 3 segundos; se deben hacer mediciones durante la construcción.</li>
+    <li>Probar la compatibilidad en los entornos definidos: Chrome 146, Firefox 134 (web) y Android 13/14 mediante PWA (móvil), según RNF3.</li>
+    <li>Verificar el cumplimiento de accesibilidad WCAG 2.1 nivel AA (RNF10): contraste mínimo 4.5:1, elementos interactivos con etiquetas descriptivas, texto legible desde 14px.</li>
+    <li>Probar los flujos alternos de cada caso de uso: por ejemplo, verificar que tras 3 intentos fallidos de inicio de sesión la cuenta se bloquee (RF2.5, RF43.5).</li>
+    <li>Validar la integración con Wompi probando pagos exitosos y rechazados según los flujos definidos en el caso de uso 9 (Pagar reserva).</li>
+  </ul>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 14: ¿Qué importancia tiene el uso de estándares de codificación en el desarrollo?</h3>
+  <p>Para Renta Móvil, los estándares de codificación son fundamentales porque el SRS referencia explícitamente varios estándares que el sistema debe cumplir:</p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Estándar</th><th>Aplicación en el proyecto</th></tr>
+      <tr><td><strong>IEEE 830-1998</strong></td><td>El propio SRS sigue este estándar para la especificación de requerimientos; el código debe ser coherente con esa estructura.</td></tr>
+      <tr><td><strong>JWT – RFC 7519</strong></td><td>El sistema debe implementar tokens JWT firmados con HS256 o RS256 según lo especificado en RF70.</td></tr>
+      <tr><td><strong>SSL/TLS – RFC 8446</strong></td><td>Todas las comunicaciones deben usar HTTPS, lo que exige implementar el estándar correctamente.</td></tr>
+      <tr><td><strong>WCAG 2.1 nivel AA</strong></td><td>El RNF10 exige cumplimiento verificable con herramientas como Lighthouse o WAVE.</td></tr>
+      <tr><td><strong>OWASP Top 10</strong></td><td>El RNF4 exige protección contra las vulnerabilidades estándar del sector.</td></tr>
+    </table>
+  </div>
+  <p>Usar estándares garantiza que el sistema sea mantenible (RNF7 exige corrección de errores críticos en menos de 24 horas), compatible con las integraciones externas (Wompi, SMTP) y verificable por el instructor.</p>
+
+  <!-- 5. SEGUIMIENTO Y CONTROL -->
+  <div class="sub-header">
+    <span class="ra-tag">RA4</span>
+    <div><h2>5. Seguimiento y Control</h2><div class="sub-desc">Avance de actividades, indicadores de progreso y gestión de cambios.</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 15: ¿Cómo realizaría el seguimiento al avance de las actividades de desarrollo?</h3>
+  <p>Para Renta Móvil, el seguimiento se realizaría usando los propios artefactos del proyecto:</p>
+  <ul class="project-list">
+    <li><strong>Lista de verificación de requerimientos:</strong> marcar como completado cada requerimiento funcional (RF1 a RF71) una vez que pase sus criterios de aceptación definidos en el SRS.</li>
+    <li><strong>Revisión de los 22 casos de uso:</strong> verificar que cada caso de uso funcione con su secuencia normal y sus flujos alternos implementados.</li>
+    <li><strong>Seguimiento por módulo:</strong> los 10 módulos del SRS sirven como unidades de progreso; un módulo se considera terminado cuando todos sus requerimientos funcionales pasan sus criterios de aceptación.</li>
+    <li><strong>Revisión de los bosquejos Figma:</strong> comparar las interfaces implementadas contra los mockups web y móvil definidos en la sección 3.3 del SRS para garantizar coherencia visual.</li>
+    <li><strong>Verificación de requerimientos no funcionales:</strong> medir tiempos de respuesta (RNF1), probar en los entornos compatibles (RNF3) y verificar la disponibilidad del sistema (RNF6).</li>
+  </ul>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 16: ¿Qué indicadores utilizaría para medir el progreso del proyecto?</h3>
+  <p>Los indicadores de progreso para Renta Móvil basados en el SRS serían:</p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Indicador</th><th>Meta / Referencia SRS</th></tr>
+      <tr><td>% de requerimientos funcionales implementados y validados</td><td>71 RFs distribuidos en 10 módulos</td></tr>
+      <tr><td>Casos de uso completados</td><td>22 casos de uso (sección 4 del SRS)</td></tr>
+      <tr><td>Tiempo de respuesta del sistema</td><td>Máximo 3 segundos (RNF1)</td></tr>
+      <tr><td>Disponibilidad del sistema</td><td>Mínimo 99,5% (RNF6)</td></tr>
+      <tr><td>Cobertura de compatibilidad</td><td>Chrome 146, Firefox 134 y Android 13/14 (RNF3)</td></tr>
+      <tr><td>Cumplimiento de seguridad JWT</td><td>Tokens expiran en 60 min, intentos fallidos en auditoría (RF70, RF15)</td></tr>
+      <tr><td>Estado de integración con Wompi</td><td>Pagos exitosos y rechazados con webhooks funcionales (RF13, RF38)</td></tr>
+    </table>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 17: ¿Cómo gestionaría los cambios en el diseño durante la construcción?</h3>
+  <p>Para Renta Móvil, cualquier cambio durante la construcción debe evaluarse contra el SRS:</p>
+  <ul class="project-list">
+    <li>Verificar si el cambio afecta algún requerimiento funcional ya definido: por ejemplo, si se propone cambiar la pasarela de pagos, eso afectaría directamente RF13, RF38, RF48 y RF63, además de las restricciones de la sección 2.3 (solo pagos en COP a través de Wompi).</li>
+    <li>Evaluar el impacto en los requerimientos no funcionales: un cambio en la arquitectura podría comprometer el cumplimiento de RNF1 (3 segundos de respuesta) o RNF4 (seguridad OWASP).</li>
+    <li>Verificar que el cambio no contradiga las limitaciones del alcance: el SRS define explícitamente que no se incluye iOS, facturación electrónica con validez fiscal ni modo offline.</li>
+    <li>Documentar el cambio y actualizar la documentación del proyecto (RNF8): el SRS exige documentación clara y actualizada para usuarios y desarrolladores.</li>
+    <li>Informar al instructor José de Jesús Motta Vargas como parte del proceso de seguimiento del proyecto.</li>
+  </ul>
+
+  <!-- 6. INTEGRACIÓN Y PRUEBAS -->
+  <div class="sub-header">
+    <span class="ra-tag">RA4</span>
+    <div><h2>6. Integración y Pruebas</h2><div class="sub-desc">Planeación de la integración de módulos, tipos de pruebas y garantía del producto final.</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 18: ¿Cómo planearía la integración de los diferentes módulos del sistema?</h3>
+  <p>La integración de Renta Móvil se planea respetando las dependencias definidas en el SRS:</p>
+  <ul class="project-list">
+    <li>Primero se integra la capa de datos (base de datos relacional) con la API REST (RF34, RF59), ya que todos los módulos dependen de esta comunicación.</li>
+    <li>Luego se integra el módulo de autenticación JWT (RF1–RF4, RF70) porque todos los demás módulos requieren verificar roles antes de ejecutar cualquier operación.</li>
+    <li>A continuación se integran los módulos del flujo principal en orden: vehículos (RF6–RF10) → reservas (RF11) → contratos (RF12) → pagos con Wompi (RF13). Esta secuencia refleja el flujo de los casos de uso 5, 6, 7, 8 y 9 del SRS.</li>
+    <li>Después se integran los módulos de soporte: auditoría (RF15, RF16), notificaciones por correo SMTP (RF18), reportes (RF24, RF25) y mantenimiento vehicular (RF26, RF30).</li>
+    <li>Finalmente se integra la aplicación móvil (Módulo 9) con la API de sincronización (RF68), verificando que todas las funcionalidades web estén disponibles también en Android 13/14.</li>
+    <li>Se verifica la API REST con control de versiones (v1, v2) para garantizar compatibilidad entre la web y la aplicación móvil (RF34, RF59).</li>
+  </ul>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 19: ¿Qué tipo de pruebas deben considerarse durante la construcción del software?</h3>
+  <p>Para Renta Móvil, los criterios de aceptación del SRS definen implícitamente los tipos de pruebas necesarias:</p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Tipo de prueba</th><th>Descripción y referencia SRS</th></tr>
+      <tr><td><strong>Pruebas de validación de formularios</strong></td><td>Verificar que los campos de registro rechacen correos duplicados, contraseñas débiles y usuarios menores de 18 años (RF1, RF42).</td></tr>
+      <tr><td><strong>Pruebas de autenticación y seguridad</strong></td><td>Confirmar bloqueo tras 3 intentos fallidos (RF2.5), expiración de tokens JWT en 60 minutos (RF70.2) y funcionamiento del código 2FA en máximo 5 minutos (RF69.4).</td></tr>
+      <tr><td><strong>Pruebas de flujo de reserva</strong></td><td>Verificar disponibilidad de vehículos en fechas seleccionadas, cálculo correcto de tarifas con seguros y servicios adicionales, y envío de notificación tras la reserva (RF11).</td></tr>
+      <tr><td><strong>Pruebas de integración con Wompi</strong></td><td>Pagos exitosos, pagos rechazados, timeout y confirmación por webhook (caso de uso 9 del SRS).</td></tr>
+      <tr><td><strong>Pruebas de rendimiento</strong></td><td>Verificar tiempos de respuesta inferiores a 3 segundos (RNF1) y recuperación automática ante fallos en menos de 5 minutos (RNF9).</td></tr>
+      <tr><td><strong>Pruebas de compatibilidad</strong></td><td>Ejecutar las funcionalidades en Chrome 146, Firefox 134 y Android 13/14 con PWA (RNF3).</td></tr>
+      <tr><td><strong>Pruebas de accesibilidad</strong></td><td>Verificar contraste mínimo 4.5:1 y navegación sin ratón en la versión web con Lighthouse o WAVE (RNF10).</td></tr>
+      <tr><td><strong>Pruebas de auditoría</strong></td><td>Confirmar que cada operación crítica genere su registro de auditoría correctamente (RF15).</td></tr>
+    </table>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">Pregunta 20: ¿Cómo garantizaría que el producto final cumpla con los requisitos definidos?</h3>
+  <p>Para garantizar que Renta Móvil cumpla con todos sus requisitos, verificaríamos:</p>
+  <ul class="project-list">
+    <li><strong>Criterios de aceptación del SRS:</strong> cada uno de los 71 requerimientos funcionales tiene criterios de aceptación explícitos. El producto se considera completo solo cuando todos esos criterios se cumplen.</li>
+    <li><strong>Los 22 casos de uso</strong> ejecutan correctamente su secuencia normal y sus flujos alternos, incluyendo casos como el bloqueo de la reserva cuando la licencia no está validada (caso de uso 7) o el rechazo de pago con sugerencias alternativas (caso de uso 9).</li>
+    <li><strong>Los 11 requerimientos no funcionales</strong> se verifican con mediciones concretas: tiempo de respuesta máximo de 3 segundos (RNF1), disponibilidad mínima del 99,5% (RNF6), tolerancia a fallos con recuperación en menos de 5 minutos (RNF9) y cumplimiento WCAG 2.1 AA con herramientas verificables (RNF10).</li>
+    <li><strong>Coherencia con los bosquejos Figma</strong> (sección 3.3 del SRS): las interfaces implementadas deben corresponder con los mockups definidos para web y móvil.</li>
+    <li><strong>Cumplimiento del alcance definido:</strong> verificar que el sistema incluya todo lo prometido (reservas, contratos en PDF, pagos por Wompi, panel administrativo, reportes en Word/PDF/Excel, Android 13/14) y no incluya lo excluido explícitamente (iOS, facturación fiscal, modo offline).</li>
+    <li><strong>Revisión final con el instructor</strong> José de Jesús Motta Vargas comparando el producto contra el SRS de la Ficha 3145555 del SENA.</li>
+  </ul>
+
+  <div class="ok-box" style="margin-top:1.5rem;">
+    Documento elaborado para el programa Tecnólogo en Análisis y Desarrollo de Software — SENA, Ficha 3145555 — 2026
+  </div>
+
+</div>
+<!-- ══════════════════════════════════════════
+     RA5
+══════════════════════════════════════════ -->
+<div class="ra-section" id="sec-ra5">
+  <div class="ra-chip">RA5 — Resultado de Aprendizaje</div>
+  <div class="ra-h1">Pruebas al Software</div>
+  <div class="ra-h1-sub">Taller 5 — Construcción de Software: control de versiones, buenas prácticas y guía de estándares de codificación.</div>
+
+  <div style="margin: 0.8rem 0 1.2rem; text-align: center;">
+    <a href="https://drive.google.com/file/d/15bTw1S7U5hHOnm1hLL62XYPRal-qqe_a/view?usp=sharing"
+       target="_blank"
+       style="display:inline-flex;align-items:center;gap:0.5rem;background:#2E75B6;color:#fff;padding:0.55rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:600;">
+      📄 Ver documento completo en Drive
+    </a>
+  </div>
+
+  <div class="sub-header">
+    <span class="ra-tag">RA5</span>
+    <div><h2>Datos del documento</h2><div class="sub-desc">Integrantes, instructor e institución.</div></div>
+  </div>
+  <div class="feat-grid spaced-grid">
+    <div class="feat-card"><div class="feat-card-title">Integrantes</div><div class="feat-card-body">Laura Vanessa Perez Perdomo · Danna Valentina Barrios Penagos · Emily Sharith Amezquita Saavedra</div></div>
+    <div class="feat-card"><div class="feat-card-title">Instructor</div><div class="feat-card-body">José de Jesús Motta Vargas</div></div>
+    <div class="feat-card"><div class="feat-card-title">Programa</div><div class="feat-card-body">Tecnólogo en Análisis y Desarrollo de Software · Ficha: 3145555</div></div>
+    <div class="feat-card"><div class="feat-card-title">Institución</div><div class="feat-card-body">SENA — Sede Industrial, Centro de la Industria, la Empresa y los Servicios · Neiva-Huila · 2026</div></div>
+  </div>
+
+  <!-- ACTIVIDAD 1 -->
+  <div class="sub-header">
+    <span class="ra-tag">RA5</span>
+    <div><h2>Actividad 1 — Herramientas de Control de Versiones</h2><div class="sub-desc">Características principales de Git, Subversion (SVN) y Mercurial.</div></div>
+  </div>
+
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Herramienta</th><th>Modelo</th><th>Características principales</th></tr>
+      <tr>
+        <td><strong>Git</strong></td>
+        <td>Distribuido</td>
+        <td>
+          Copia local completa del repositorio con todo el historial; permite trabajar sin conexión. Operaciones locales muy rápidas; integridad del historial mediante hashes (SHA). Manejo de ramas y fusiones eficiente y flexible (branching y merging). Amplia adopción y ecosistema (GitHub, GitLab, herramientas y documentación).
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Subversion (SVN)</strong></td>
+        <td>Centralizado</td>
+        <td>
+          Repositorio central único que almacena el historial; las operaciones suelen requerir conexión. Commits atómicos (cada conjunto de cambios se registra como una única revisión). Buen control de archivos y directorios; soporte para bloqueo de archivos (útil para binarios). Curva de aprendizaje menor frente a Git; administración centralizada de permisos y copias de seguridad.
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Mercurial</strong></td>
+        <td>Distribuido</td>
+        <td>
+          Copia local completa del repositorio; enfoque en simplicidad y consistencia. Buen rendimiento y escalabilidad; soporte sólido para ramas y fusiones. Interfaz más simple y comandos más consistentes, curva de aprendizaje menos pronunciada que Git. Menor comunidad y ecosistema que Git, pero estable y adecuado para equipos que priorizan facilidad de uso.
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ACTIVIDAD 2 -->
+  <div class="sub-header">
+    <span class="ra-tag">RA5</span>
+    <div><h2>Actividad 2 — Recomendación de Herramienta de Versionamiento</h2><div class="sub-desc">Empresa con 8 desarrolladores, trabajo remoto, desarrollo simultáneo de módulos e integración continua.</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">¿Qué herramienta de versionamiento recomendaría?</h3>
+  <p>Las herramientas de versionamiento que recomendamos son <strong>Git</strong>, usando <strong>GitHub o GitLab</strong> como plataforma en la nube.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">¿Por qué considera que es la mejor opción?</h3>
+  <p>Porque Git fue diseñado exactamente para este tipo de escenario: equipos distribuidos trabajando al mismo tiempo sobre un mismo proyecto. Permite que cada desarrollador tenga su propia copia del código, trabaje de forma independiente en su módulo y luego integre sus cambios sin afectar el trabajo de los demás. Además, es el estándar de la industria, tiene enorme documentación y soporte, y se conecta fácilmente con herramientas de integración continua.</p>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">¿Qué ventajas aportaría al equipo de desarrollo?</h3>
+  <ul class="project-list">
+    <li><strong>Trabajo en paralelo sin conflictos:</strong> cada desarrollador trabaja en su propia rama y los cambios se fusionan de forma controlada.</li>
+    <li><strong>Historial completo de cambios:</strong> se sabe quién modificó qué, cuándo y por qué, lo que facilita detectar errores y revertirlos.</li>
+    <li><strong>Integración continua fluida:</strong> GitHub Actions o GitLab CI permiten ejecutar pruebas automáticas cada vez que se sube código nuevo.</li>
+    <li><strong>Revisión de código entre compañeros:</strong> mediante Pull Requests, otro desarrollador revisa los cambios antes de aprobarlos.</li>
+    <li><strong>Acceso remoto seguro:</strong> cualquier miembro del equipo puede trabajar desde cualquier lugar sin depender de un servidor físico.</li>
+  </ul>
+
+  <!-- ACTIVIDAD 3 -->
+  <div class="sub-header">
+    <span class="ra-tag">RA5</span>
+    <div><h2>Actividad 3 — Instalación y Configuración de Git</h2><div class="sub-desc">Evidencia en video de la instalación y configuración básica de Git.</div></div>
+  </div>
+  <div class="drive-grid">
+    <div class="drive-card">
+      <div class="drive-icon">🎥</div>
+      <div class="drive-title">Video — Instalación y Configuración de Git</div>
+      <div class="drive-desc">Evidencia de la instalación de Git y configuración básica (user.name, user.email, core.editor) en el equipo de desarrollo.</div>
+      <a class="drive-btn" href="https://drive.google.com/file/d/1hb-tSVXIrW8dLh15roLQzPjQ-hLH39WT/view?usp=sharing" target="_blank">
+        Ver video en Drive
+        <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- ACTIVIDAD 4 -->
+  <div class="sub-header">
+    <span class="ra-tag">RA5</span>
+    <div><h2>Actividad 4 — Repositorio Local</h2><div class="sub-desc">Crear carpeta, inicializar repositorio, crear README.md, primer commit y rama "desarrollo".</div></div>
+  </div>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Paso</th><th>Acción realizada</th></tr>
+      <tr><td>1</td><td>Crear carpeta del proyecto.</td></tr>
+      <tr><td>2</td><td>Inicializar repositorio Git (<code>git init</code>).</td></tr>
+      <tr><td>3</td><td>Crear archivo <code>README.md</code>.</td></tr>
+      <tr><td>4</td><td>Realizar primer commit (<code>git add . && git commit -m "feat: primer commit"</code>).</td></tr>
+      <tr><td>5</td><td>Crear una rama llamada "desarrollo" (<code>git checkout -b desarrollo</code>).</td></tr>
+    </table>
+  </div>
+  <div class="drive-grid">
+    <div class="drive-card">
+      <div class="drive-icon">🎥</div>
+      <div class="drive-title">Video — Repositorio Local Git</div>
+      <div class="drive-desc">Evidencia de la creación del repositorio local, primer commit y creación de la rama "desarrollo".</div>
+      <a class="drive-btn" href="https://youtu.be/HF1jSvrbjA4?si=Syxb53WPxxg6aC97" target="_blank">
+        Ver video en <span class="ai-youtube"></span>
+        <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- ACTIVIDAD 5 -->
+  <div class="sub-header">
+    <span class="ra-tag">RA5</span>
+    <div><h2>Actividad 5 — Buenas Prácticas de Codificación en Java</h2><div class="sub-desc">Siete buenas prácticas aplicadas al lenguaje Java.</div></div>
+  </div>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">1. Nombres claros y descriptivos</h3>
+  <p>Las variables, métodos y clases deben decir exactamente qué hacen, sin abreviaciones confusas.</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">// ❌ Mal
+int x = 25;
+void calc() {}
+
+// ✅ Bien
+int edadUsuario = 25;
+void calcularDescuento() {}</pre>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">2. Una clase, una responsabilidad</h3>
+  <p>Cada clase debe tener un único propósito. Si una clase hace demasiadas cosas, es momento de dividirla.</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">// ✅ Bien
+class Factura { ... }     // Solo maneja facturas
+class EnvioCorreo { ... } // Solo maneja correos</pre>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">3. Evitar métodos muy largos</h3>
+  <p>Un método que hace demasiado es difícil de leer y mantener. Si supera las 20–30 líneas, considera dividirlo.</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">// ✅ Bien: métodos cortos y concretos
+void validarUsuario() { ... }
+void guardarUsuario() { ... }
+void notificarUsuario() { ... }</pre>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">4. Usar constantes en lugar de números mágicos</h3>
+  <p>Los números sin contexto confunden a cualquiera que lea el código después.</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">// ❌ Mal
+double impuesto = precio * 0.19;
+
+// ✅ Bien
+final double IVA = 0.19;
+double impuesto = precio * IVA;</pre>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">5. Manejo adecuado de excepciones</h3>
+  <p>No ignorar los errores ni capturar todo con un Exception genérico sin dar información útil.</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">// ❌ Mal
+try { ... } catch (Exception e) {}
+
+// ✅ Bien
+try { ... } catch (IOException e) {
+  System.out.println("Error al leer el archivo: " + e.getMessage());
+}</pre>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">6. Comentar solo lo necesario</h3>
+  <p>El código bien escrito se explica solo. Los comentarios deben aclarar el <em>por qué</em>, no el <em>qué</em>.</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">// ❌ Innecesario
+int edad = 18; // asigna 18 a edad
+
+// ✅ Útil
+// La edad mínima requerida por regulación legal
+int edadMinima = 18;</pre>
+
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">7. Aplicar el principio DRY (Don't Repeat Yourself)</h3>
+  <p>Si el mismo bloque de código aparece más de una vez, conviértelo en un método reutilizable.</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">// ✅ Reutilizable
+double aplicarDescuento(double precio, double porcentaje) {
+  return precio - (precio * porcentaje);
+}</pre>
+
+  <!-- ACTIVIDAD 6 -->
+  <div class="sub-header">
+    <span class="ra-tag">RA5</span>
+    <div><h2>Actividad 6 — Guía de Estándares de Codificación</h2><div class="sub-desc">Mini guía para el proyecto RentaMovil: nombres, comentarios, carpetas, errores, versiones y revisión de código.</div></div>
+  </div>
+
+  <div style="margin: 0.5rem 0 1.2rem;">
+    <a href="https://docs.google.com/document/d/1f2iCKwwTEgvHCykjM7tOpocBZC31GscL/edit"
+       target="_blank"
+       style="display:inline-flex;align-items:center;gap:0.5rem;background:#2E75B6;color:#fff;padding:0.55rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:600;">
+      📄 Ver guía completa en Drive
+      <svg viewBox="0 0 24 24" width="16" height="16"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+    </a>
+  </div>
+
+  <!-- 1. NOMBRES -->
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">1. Convenciones de Nombres</h3>
+  <p><strong>1.1 Archivos y carpetas</strong></p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Tipo</th><th>Convención</th><th>Ejemplo</th></tr>
+      <tr><td>Componente React / RN</td><td>PascalCase</td><td>VehiculoCard.jsx / VehiculoCard.tsx</td></tr>
+      <tr><td>Página web</td><td>PascalCase</td><td>CatalogoPage.jsx</td></tr>
+      <tr><td>Pantalla móvil (Expo Router)</td><td>kebab-case</td><td>app/catalogo/index.tsx</td></tr>
+      <tr><td>Custom Hook</td><td>camelCase con 'use'</td><td>useReservas.js</td></tr>
+      <tr><td>Servicio API</td><td>camelCase + 'Service'</td><td>vehiculosService.js</td></tr>
+      <tr><td>Store Zustand</td><td>camelCase + 'Store'</td><td>authStore.js</td></tr>
+      <tr><td>Utilidades</td><td>camelCase</td><td>formatFecha.js</td></tr>
+      <tr><td>Carpetas de módulo</td><td>kebab-case</td><td>auth/, reservas/, pagos/</td></tr>
+    </table>
+  </div>
+
+  <p><strong>1.2 Variables, funciones y constantes</strong></p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Tipo</th><th>Convención</th><th>Ejemplo</th></tr>
+      <tr><td>Variable</td><td>camelCase</td><td>vehiculoSeleccionado</td></tr>
+      <tr><td>Función</td><td>camelCase</td><td>obtenerReservas()</td></tr>
+      <tr><td>Constante global</td><td>UPPER_SNAKE_CASE</td><td>API_BASE_URL</td></tr>
+      <tr><td>Booleano</td><td>camelCase con prefijo</td><td>estaDisponible, tieneError</td></tr>
+      <tr><td>Props</td><td>camelCase</td><td>onPresionar, esActivo</td></tr>
+    </table>
+  </div>
+
+  <p><strong>1.3 Idioma:</strong> Los nombres de variables, funciones, componentes y archivos se escriben en <strong>español</strong>. Los nombres técnicos propios de las librerías se mantienen en inglés tal como los define la tecnología (useState, useEffect, axios, etc.).</p>
+
+  <!-- 2. COMENTARIOS -->
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">2. Uso de Comentarios</h3>
+  <p><strong>2.1 Cuándo comentar:</strong></p>
+  <ul class="project-list">
+    <li>Al inicio de cada archivo de servicio, describir qué módulo atiende.</li>
+    <li>En custom hooks, explicar qué datos retorna y para qué se usa.</li>
+    <li>En lógica compleja (validaciones, cálculos de fechas, integración con Wompi), explicar el razonamiento.</li>
+    <li>En rutas protegidas, indicar qué roles tienen acceso.</li>
+    <li>Cuando se usa una solución no obvia, explicar por qué se tomó esa decisión.</li>
+  </ul>
+  <p><strong>2.2 Cuándo NO comentar:</strong></p>
+  <ul class="project-list">
+    <li>No comentar código obvio.</li>
+    <li>No dejar código comentado en el repositorio. Si ya no se usa, se elimina. Git guarda el historial.</li>
+    <li>No usar TODO sin fecha y responsable. Formato correcto: <code>// TODO [Laura] [2026-05] revisar lógica de expiración de token</code></li>
+  </ul>
+  <p><strong>2.3 Formato de comentario de bloque para servicios:</strong></p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">/**
+ * Servicio de vehículos.
+ * Gestiona todas las peticiones HTTP del módulo catálogo.
+ * Plataformas: web y móvil.
+ */
+
+// El token expira en 60 minutos según el RNF4 del SRS</pre>
+
+  <!-- 3. CARPETAS -->
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">3. Organización de Carpetas</h3>
+  <p><strong>3.1 Aplicación web — React + Vite</strong></p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Carpeta / Archivo</th><th>Contenido</th></tr>
+      <tr><td><code>public/</code></td><td>Archivos estáticos, manifest.json</td></tr>
+      <tr><td><code>src/assets/</code></td><td>Imágenes, íconos, fuentes</td></tr>
+      <tr><td><code>src/components/ui/</code></td><td>Botones, inputs, modales reutilizables</td></tr>
+      <tr><td><code>src/components/layout/</code></td><td>Navbar, Sidebar, Footer</td></tr>
+      <tr><td><code>src/components/shared/</code></td><td>Componentes comunes entre módulos</td></tr>
+      <tr><td><code>src/modules/auth/</code></td><td>Login, registro, recuperación de contraseña</td></tr>
+      <tr><td><code>src/modules/catalogo/</code></td><td>Lista de vehículos, filtros</td></tr>
+      <tr><td><code>src/modules/reservas/</code></td><td>Formulario de reserva, calendario</td></tr>
+      <tr><td><code>src/modules/pagos/</code></td><td>Integración Wompi (PSE, tarjetas, Nequi)</td></tr>
+      <tr><td><code>src/modules/contratos/</code></td><td>Generación y descarga de PDF</td></tr>
+      <tr><td><code>src/modules/admin/</code></td><td>Panel administrativo, reportes (Word/PDF/Excel)</td></tr>
+      <tr><td><code>src/modules/perfil/</code></td><td>Perfil de usuario e historial</td></tr>
+      <tr><td><code>src/services/</code></td><td>Llamadas a la API REST (Axios)</td></tr>
+      <tr><td><code>src/hooks/</code></td><td>Custom hooks compartidos entre módulos</td></tr>
+      <tr><td><code>src/store/</code></td><td>Estado global Zustand</td></tr>
+      <tr><td><code>src/routes/</code></td><td>Definición de rutas y rutas protegidas</td></tr>
+      <tr><td><code>src/utils/</code></td><td>Funciones de ayuda (formatFecha, validaciones)</td></tr>
+    </table>
+  </div>
+  <p>Cada módulo en <code>src/modules/</code> sigue internamente esta estructura:</p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">auth/
+  components/  → Componentes visuales del módulo
+  hooks/       → Lógica del módulo (custom hooks)
+  services/    → Llamadas a la API de este módulo
+  pages/       → Páginas completas del módulo</pre>
+
+  <p><strong>3.2 Aplicación móvil — React Native + Expo</strong></p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Carpeta / Archivo</th><th>Contenido</th></tr>
+      <tr><td><code>app/</code></td><td>Pantallas gestionadas por Expo Router</td></tr>
+      <tr><td><code>app/(auth)/</code></td><td>Pantallas de login y registro</td></tr>
+      <tr><td><code>app/(public)/</code></td><td>Pantallas accesibles sin sesión</td></tr>
+      <tr><td><code>app/(admin)/</code></td><td>Pantallas del panel administrativo</td></tr>
+      <tr><td><code>app/onboarding/</code></td><td>Pantalla de bienvenida (primera vez que abre la app)</td></tr>
+      <tr><td><code>components/</code></td><td>Componentes reutilizables</td></tr>
+      <tr><td><code>services/</code></td><td>Llamadas a la API REST (compartidas con web)</td></tr>
+      <tr><td><code>hooks/</code></td><td>Custom hooks</td></tr>
+      <tr><td><code>store/</code></td><td>Estado global Zustand</td></tr>
+      <tr><td><code>utils/</code></td><td>Funciones de ayuda</td></tr>
+      <tr><td><code>constants/</code></td><td>Constantes globales (API_BASE_URL, ROLES, etc.)</td></tr>
+    </table>
+  </div>
+  <p><strong>3.3 Reglas:</strong></p>
+  <ul class="project-list">
+    <li>Un archivo, un componente.</li>
+    <li>No crear archivos sueltos en la raíz de <code>src/</code>. Todo tiene su carpeta.</li>
+    <li>No mezclar estilos CSS de web con StyleSheet de React Native. Son incompatibles entre plataformas.</li>
+    <li>La carpeta <code>services/</code> y <code>store/</code> son compatibles entre web y móvil sin modificación.</li>
+  </ul>
+
+  <!-- 4. ERRORES -->
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">4. Manejo de Errores</h3>
+  <p><strong>4.1 Reglas generales:</strong></p>
+  <ul class="project-list">
+    <li>Toda llamada a la API (Axios) debe estar envuelta en <code>try/catch</code>.</li>
+    <li>Nunca mostrar mensajes técnicos al usuario (ej: '500 Internal Server Error'). Siempre traducir a lenguaje claro.</li>
+    <li>Todo componente que hace una petición debe manejar tres estados: cargando, con datos y con error.</li>
+  </ul>
+  <p><strong>4.2 Estructura estándar de un servicio:</strong></p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">// vehiculosService.js
+export const getVehiculos = async () => {
+  try {
+    const respuesta = await axios.get('/api/v1/vehiculos');
+    return respuesta.data;
+  } catch (error) {
+    console.error('Error al obtener vehículos:', error);
+    throw error;
+  }
+};</pre>
+  <p><strong>4.3 Estados visuales obligatorios:</strong></p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Estado</th><th>Qué mostrar al usuario</th></tr>
+      <tr><td><strong>Cargando</strong></td><td>Indicador de carga (spinner o skeleton).</td></tr>
+      <tr><td><strong>Con datos</strong></td><td>La información solicitada correctamente.</td></tr>
+      <tr><td><strong>Con error</strong></td><td>Mensaje claro y opción de reintentar. Ej: 'No fue posible cargar los vehículos. Intenta de nuevo.'</td></tr>
+      <tr><td><strong>Sin datos</strong></td><td>Mensaje informativo. Ej: 'No tienes reservas activas.'</td></tr>
+    </table>
+  </div>
+  <p><strong>4.4 Manejo del token JWT:</strong></p>
+  <ul class="project-list">
+    <li>En la app móvil: el token se almacena en <strong>Expo SecureStore</strong>. Nunca en AsyncStorage sin cifrar.</li>
+    <li>En la app web: el token se gestiona desde el store de Zustand. No se guarda en localStorage.</li>
+    <li>Si el token expira (60 minutos), el sistema redirige al login y muestra: 'Tu sesión ha expirado. Inicia sesión de nuevo.'</li>
+    <li>Todos los endpoints protegidos deben incluir el header: <code>Authorization: Bearer {token}</code></li>
+  </ul>
+
+  <!-- 5. CONTROL DE VERSIONES -->
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">5. Control de Versiones</h3>
+  <p><strong>5.1 Estructura de ramas:</strong></p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Rama</th><th>Descripción</th></tr>
+      <tr><td><code>main</code></td><td>Código estable y listo para producción. Solo recibe merges desde qa cuando hay una versión aprobada.</td></tr>
+      <tr><td><code>qa</code></td><td>Rama de pruebas. Recibe el código desde dev para verificar que todo funciona antes de pasar a main.</td></tr>
+      <tr><td><code>dev</code></td><td>Rama de integración. Todas las funcionalidades se unen aquí durante el desarrollo.</td></tr>
+      <tr><td><code>feature/nombre</code></td><td>Rama para desarrollar una funcionalidad nueva. Ej: feature/modulo-reservas, feature/login-jwt</td></tr>
+      <tr><td><code>fix/nombre</code></td><td>Rama para corregir un error. Ej: fix/error-pago-wompi</td></tr>
+    </table>
+  </div>
+  <p><strong>5.2 Convención de mensajes de commit:</strong></p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Tipo</th><th>Cuándo usarlo</th></tr>
+      <tr><td><code>feat</code></td><td>Se agrega una funcionalidad nueva</td></tr>
+      <tr><td><code>fix</code></td><td>Se corrige un error</td></tr>
+      <tr><td><code>refactor</code></td><td>Se reorganiza el código sin cambiar su comportamiento</td></tr>
+      <tr><td><code>docs</code></td><td>Se actualizan comentarios o documentación</td></tr>
+      <tr><td><code>style</code></td><td>Cambios de estilos o formato visual</td></tr>
+      <tr><td><code>chore</code></td><td>Tareas de configuración, instalación de paquetes</td></tr>
+    </table>
+  </div>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;">feat: agregar componente VehiculoCard al módulo catálogo
+fix: corregir validación de fecha en formulario de reserva
+refactor: extraer lógica de autenticación a useAuth hook
+docs: actualizar comentarios en vehiculosService
+style: ajustar estilos de pantalla de login en móvil
+chore: instalar expo-secure-store</pre>
+  <p><strong>5.3 Reglas:</strong></p>
+  <ul class="project-list">
+    <li>Nunca trabajar directamente sobre <code>main</code>, <code>qa</code> ni <code>dev</code>.</li>
+    <li>Siempre crear una rama <code>feature/</code> o <code>fix/</code> desde dev para cada tarea.</li>
+    <li>Hacer commits pequeños y frecuentes, no un solo commit enorme al final.</li>
+    <li>No subir archivos de configuración local (<code>.env</code>, <code>node_modules</code>, <code>.expo/</code>).</li>
+  </ul>
+
+  <!-- 6. REVISIÓN DE CÓDIGO -->
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">6. Revisión de Código</h3>
+  <p>La revisión la hace la integrante que no escribió el código. Se verifica antes de hacer merge a dev.</p>
+  <p><strong>6.1 Checklist antes de hacer merge:</strong></p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Verificación</th></tr>
+      <tr><td>☐ Los nombres siguen las convenciones definidas en la sección 1.</td></tr>
+      <tr><td>☐ Las llamadas a la API están en <code>services/</code>, no dentro de los componentes.</td></tr>
+      <tr><td>☐ Toda petición HTTP tiene <code>try/catch</code> con mensaje de error visible para el usuario.</td></tr>
+      <tr><td>☐ El componente maneja los estados de carga, datos y error.</td></tr>
+      <tr><td>☐ No hay <code>console.log</code> de depuración dejados accidentalmente.</td></tr>
+      <tr><td>☐ No hay código comentado sin justificación.</td></tr>
+      <tr><td>☐ El código fue probado manualmente antes del merge.</td></tr>
+      <tr><td>☐ El token JWT se maneja correctamente según la plataforma.</td></tr>
+      <tr><td>☐ No se mezclan estilos CSS de web con StyleSheet de React Native.</td></tr>
+      <tr><td>☐ El mensaje del commit describe claramente qué se hizo.</td></tr>
+    </table>
+  </div>
+
+  <!-- 7. ESPACIO DE DESARROLLO -->
+  <h3 style="margin:1rem 0 0.4rem;font-size:1rem;color:var(--text);">7. Espacio de Desarrollo</h3>
+  <p><strong>7.1 Herramientas requeridas:</strong></p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Herramienta</th><th>Versión</th><th>Para qué se usa</th></tr>
+      <tr><td>Node.js</td><td>v20 LTS o superior</td><td>Ejecutar React + Vite y herramientas npm</td></tr>
+      <tr><td>npm</td><td>v10 o superior</td><td>Gestión de paquetes</td></tr>
+      <tr><td>Git</td><td>v2.40 o superior</td><td>Control de versiones</td></tr>
+      <tr><td>Visual Studio Code</td><td>Última versión estable</td><td>Editor de código principal</td></tr>
+      <tr><td>Expo Go (móvil)</td><td>SDK 54</td><td>Probar la app en dispositivo Android físico</td></tr>
+      <tr><td>Android físico</td><td>Android 13 o 14</td><td>Pruebas en dispositivo real</td></tr>
+      <tr><td>Chrome</td><td>v146</td><td>Probar la app web</td></tr>
+      <tr><td>Firefox</td><td>v134</td><td>Verificar compatibilidad web</td></tr>
+    </table>
+  </div>
+  <p><strong>7.2 Extensiones de VS Code recomendadas:</strong></p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>Extensión</th><th>Para qué sirve</th></tr>
+      <tr><td>ESLint</td><td>Detecta errores y malas prácticas en JavaScript/TypeScript.</td></tr>
+      <tr><td>Prettier</td><td>Formatea el código automáticamente para mantener el mismo estilo.</td></tr>
+      <tr><td>Tailwind CSS IntelliSense</td><td>Autocompletado de clases de Tailwind (solo app web).</td></tr>
+      <tr><td>React Native Tools</td><td>Soporte de depuración para React Native y Expo.</td></tr>
+      <tr><td>GitLens</td><td>Ver el historial de cambios de cada línea en el editor.</td></tr>
+    </table>
+  </div>
+  <p><strong>7.3 Variables de entorno:</strong></p>
+  <pre style="background:var(--surface,#f5f5f5);border:1px solid #ddd;border-radius:8px;padding:1rem;font-size:0.82rem;overflow-x:auto;line-height:1.6;"># .env.example — App Web
+VITE_API_BASE_URL=http://localhost:8080/api/v1
+
+# .env.example — App Móvil (Expo)
+EXPO_PUBLIC_API_BASE_URL=http://localhost:8080/api/v1</pre>
+  <ul class="project-list">
+    <li>La URL base de la API se define en un archivo <code>.env</code> en la raíz del proyecto.</li>
+    <li>El archivo <code>.env</code> nunca se sube al repositorio. Está incluido en <code>.gitignore</code>.</li>
+    <li>Se incluye un archivo <code>.env.example</code> con las variables requeridas sin valores reales.</li>
+  </ul>
+
+</div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
